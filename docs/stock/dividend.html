@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>股票分红 - 与资本,基本,股票,商业有关的知识汇总</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../tutorial.html">简介</a></li><li class="spacer"></li><li class="chapter-item expanded "><div>认识商业</div></li><li class="chapter-item expanded "><a href="../stock/index.html">股票</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../stock/dividend.html" class="active">股票分红</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">与资本,基本,股票,商业有关的知识汇总</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="股票分红"><a class="header" href="#股票分红">股票分红</a></h1>
+<p>原文: <a href="https://t.10jqka.com.cn/pid_98667770.shtml">【基础知识】股票分红是怎么回事，分红到底是亏了还是赚了？</a></p>
+<p>整理自: <code>2022-01-25 17:54:27</code></p>
+<h2 id="什么是分红"><a class="header" href="#什么是分红">什么是分红？</a></h2>
+<p>投资者购买一家上市公司的股票，对该公司进行投资，同时享受公司分红的权利，股票分红是上市公司在<code>年终</code>（<code>年中</code>）结算后，将盈利的一部分作为股利按股额分配给普通股股东的行为，一般有两种形式：派发 <strong>现金股利</strong> 和 <strong>股票股利</strong>，上市公司可根据情况选择其中一种形式进行分红，也可以两种形式同时用。</p>
+<p><strong>现金股利</strong> 是指以现金形式向股东发放股利，称为派股息或派息；</p>
+<p><strong>股票股利</strong> 是指上市公司向股东分发股票，红利以股票的形式到账，又称为送<code>红股</code>或<code>送股</code>。</p>
+<p>另外，公司想要给股东分配红利须满足以下基本条件：</p>
+<ol>
+<li>公司当年有税后利润；</li>
+<li>已经弥补公司亏损；</li>
+<li>已经提取10%的法定公积金；</li>
+<li>最近三年以现金方式累计分配的利润不少于最近三年实现的年均可分配利润的30%。</li>
+</ol>
+<p>当然还有一些其他复杂的条件和程序要求，这里就不赘述了。</p>
+<h2 id="股票分红为何要除权"><a class="header" href="#股票分红为何要除权">股票分红为何要除权？</a></h2>
+<p>上市公司以 <strong>股票股利</strong> 分配给股东，也就是公司的盈余转为增资时，或进行配股时，就要对股价进行<code>除权（XR）</code>，<strong>XR</strong> 是 <code>EXCLUD</code>（除去）<code>RIGHT</code>（权利）的简写。</p>
+<p>上市公司将盈余以 <strong>现金股利</strong> 分配给股东，股价就要<code>除息（XD）</code>，<strong>XD</strong> 是 <code>EXCLUD</code>（除去）<code>DIVIDEN</code>（利息）的简写。<strong>DR</strong> 表示当天是这只股票的 <em>除息、除权日</em>，<strong>D</strong> 为 <code>DIVIDEN</code>（利息）的简写，<strong>R</strong> 为 <code>RIGHT</code>（权利）的简写。</p>
+<p>当一家上市公司宣布送股或配股时，在红股尚未分配，配股尚未配之前，该股票被称为含权股票。</p>
+<p>要办理除权手续的股份公司先要报主管机关核定，在准予除权后，该公司即可确定股权登记基准日和除权基准日。</p>
+<p>凡在股权登记日拥有该股票的股东，就享有领取或认购股权的权利，即可参加分红或配股。</p>
+<p><strong>A股</strong> 分红一般为两次，<em>半年报</em>和<em>年报</em>，<em>年报</em>分红居多。分红方式也是两种：<strong>现金</strong> 和 <strong>股票</strong>。</p>
+<h3 id="分红-现金"><a class="header" href="#分红-现金">分红: 现金</a></h3>
+<p>现金分红很简单，分多少股价里面扣多少。这里有个误区是不要以为是直接送钱给你，而是把股票中本身含有的部分价值，折现给你，同时股价会下跌。</p>
+<blockquote>
+<p><strong>注意</strong>:</p>
+<p>现金分红是要交个税的，基本原则是<em>持有时间越长，交税越少</em>：</p>
+<ol>
+<li>持股一年以上，收红利的5%的税， (持股 &gt;= 1年, 5% 个税)</li>
+<li>持股低于一年超过一个月，收红利的10%的税，(1年 &gt; 持股 &gt;= 1月, 10% 个税)</li>
+<li>持股不足一月，收取红利的20%的税。 (1月 &gt; 持股, 20% 个税)</li>
+</ol>
+</blockquote>
+<h3 id="分红-股票"><a class="header" href="#分红-股票">分红: 股票</a></h3>
+<p>我们经常听到 <strong>送转</strong> ，其实还有一个<strong>派</strong> 。<strong>送转派</strong> 三个方式。很多人不理解为什么要分为三个词，送转都是给股票，派是给现金。</p>
+<p>例如10转5送5派1,每10股给你10股，另派1元现金。</p>
+<p>转和送的区别在于交税，转不缴税，送每股缴纳1元。</p>
+<p>这里也有个误区是不要以为你股票多了你岂不是资金翻一倍？想得美，无论转送你多少股，除权后股价会按转送比例下调，10送10,20的股价第二天成10块。只不过你就是股票多了而已。</p>
+<h2 id="股票分红意义"><a class="header" href="#股票分红意义">股票分红意义</a></h2>
+<ol>
+<li>只有真正盈利有保障，现金流稳定，债务可控的公司才能持续大比例分红。所以，通过分红能力，可以排除掉大量财务注水公司。</li>
+<li>只要分红能力稳定，分红除权、股价变低的股票更有投资价值，所以会大概率<strong>填权</strong>。假设有一只可以每年稳定分红10元的股票，现价100元，分红率10/100；分红后，股价变90元，但依然可以每年分红10元，分红率10/90，显然更值得投资了。</li>
+<li>当然，有些公司增长快，资金利用效率高，选择不分红。如果你能找到这样的公司，并且对自己的判断有把握，可以忽略高分红股票。</li>
+</ol>
+<h2 id="分红送股是利好还是利空"><a class="header" href="#分红送股是利好还是利空">分红送股是利好还是利空?</a></h2>
+<p>很多股民以为分到的红利或者红股就是自己的纯获利，其实不然，因为股票分红后，交易所在权益登记日次一交易日(也就是除权除息日)会对该股票作除权除息处理，形成除权除息价，以保持股东持有该股的前后总权益不变。</p>
+<p><strong>分红前的持股市值</strong> = <strong>分红后的持股市值</strong> + <strong>现金红利</strong>【如遇除权除息价需四舍五入的，开盘前账户显示会与计算所得有出入，但不影响客户实际资产，因为开盘前的市值只是短暂的过度，后续行情还是按照实际计算所得的除权除息价变化的。】</p>
+<p>就像前面提到过，上市公司分红是需要达到规定的盈利条件，从这个层面来看可以在一定程度上体现该公司的运营状况良好。另外，除权除息后，股价会变低，能增加流动性，对于一些之前盘桓在高位不敢下手的客户来说也不乏是一种机会。</p>
+<p>所以，你选择除权除息前获利了结，我选择持有到分红以待后市填权获利，都是根据股民个人投资习惯和判断来取舍。</p>
+<h2 id="这些分红套路需要警惕"><a class="header" href="#这些分红套路需要警惕">这些分红“套路”需要警惕</a></h2>
+<p>值得注意的是，一些上市公司虽有大比例现金分红，但多数现金最终都流进了大股东的腰包。部分高额现金分红的公司，偶尔分红之后，却面临亏损、无红可分的窘境。</p>
+<p>经营较好的年份，为何吝于分红？分红政策为何会出现剧烈波动？深圳某私募人士分析称，<em>通过对业绩、分红的调节，可以达到拉升、打压股价，或者为后续运作铺路</em>，以往已经出现类似情形。但对于上述情况，不好过多猜测。</p>
+<p>武汉科技大学教授董登新分析，现金分红有利于价值投资、长期投资，但分红要有均衡的节奏，不能忽高忽低，长期不分红、分红剧烈波动的，都要引起警惕，需要监管层加强监管力度，对相关公司的财务真实性加强监控。</p>
+<h2 id="如何挖到高分红潜力股"><a class="header" href="#如何挖到高分红潜力股">如何挖到高分红潜力股？</a></h2>
+<p>对于投资者来说，股票属于绝对的高风险投资品种，需要警惕但股息的差异化税收，以及除息规则，否则，就会面临拿了红利仍然赔钱的处境。</p>
+<p>“打铁还需自身硬”，投资者炒股需要“火眼金睛”，认清高分红潜力股的这5大特征：</p>
+<ol>
+<li>高分红历史
+<blockquote>
+<p>“良心企业”都有良好的高分红历史，比如，<em>双汇发展</em>、<em>华电国际</em>、<em>上汽集团</em> 和 <em>中恒集团</em> 的分红率还呈现逐年递增的态势，其中 <em>双汇发展</em>、<em>浙江永强</em>、<em>奥瑞金</em>、<em>华能国际</em> 和 <em>大秦铁路</em> 历年平均分红率超过50%。</p>
+</blockquote>
+</li>
+<li>现金充裕，业绩稳定
+<blockquote>
+<p>现金资产相对充裕，未来现金收入可期，是公司维持高分红水平的基础。未分配利润较为充足，才能足以支撑高分红的预期。</p>
+</blockquote>
+</li>
+<li>资产负债率较低
+<blockquote>
+<p>负债水平不高，当公司现金充沛，毋须更多资金补充扩张的情况下，把钱通过高分红的形式分掉，就是合理的选择。</p>
+</blockquote>
+</li>
+<li>存实际控制人，第一大股东持股比例较高
+<blockquote>
+<p>从股东意愿角度来看，大股东的高持股比例是高分红的动力，大股东也实际拿走了分红的大部分收益。</p>
+</blockquote>
+</li>
+<li>国企或央企背景
+<blockquote>
+<p>这些公司相较其它公司，有为母公司推进国企改革提供资金的意愿，也有配合监管层鼓励分红、提高分红比率、加强A股价值投资取向的意图。</p>
+</blockquote>
+</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../stock/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../stock/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

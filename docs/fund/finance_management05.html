@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>债券基金 - 与资本,基本,股票,商业有关的知识汇总</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../tutorial.html">简介</a></li><li class="spacer"></li><li class="chapter-item expanded "><div>认识商业</div></li><li class="chapter-item expanded "><a href="../stock/index.html">股票</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/dividend.html">股票分红</a></li></ol></li><li class="chapter-item expanded "><a href="../fund/index.html">基金</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/finance_management01.html">基金入门</a></li><li class="chapter-item "><a href="../fund/finance_management02.html">基金常识</a></li><li class="chapter-item "><a href="../fund/finance_management03.html">常用术语</a></li><li class="chapter-item "><a href="../fund/finance_management04.html">指数基金</a></li><li class="chapter-item expanded "><a href="../fund/finance_management05.html" class="active">债券基金</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">与资本,基本,股票,商业有关的知识汇总</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li><a href="#%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91">债券基金</a>
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%80%BA%E5%88%B8">什么是债券</a></li>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91">什么是债券基金</a></li>
+<li><a href="#%E5%80%BA%E5%88%B8%E7%9A%84%E7%A7%8D%E7%B1%BB">债券的种类</a>
+<ul>
+<li><a href="#%E5%9B%BD%E5%80%BA">国债</a></li>
+<li><a href="#%E4%BF%A1%E7%94%A8%E5%80%BA">信用债</a></li>
+<li><a href="#%E5%8F%AF%E8%BD%AC%E5%80%BA">可转债</a></li>
+</ul>
+</li>
+<li><a href="#%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E5%88%86%E7%B1%BB">债券基金的分类</a>
+<ul>
+<li><a href="#%E7%BA%AF%E5%80%BA%E5%9F%BA%E9%87%91">纯债基金</a></li>
+<li><a href="#%E9%9D%9E%E7%BA%AF%E5%80%BA%E5%9F%BA%E9%87%91">非纯债基金</a></li>
+<li><a href="#%E5%8F%AF%E8%BD%AC%E5%80%BA%E5%9F%BA%E9%87%91">可转债基金</a></li>
+</ul>
+</li>
+<li><a href="#%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E8%B4%B9%E7%94%A8">债券基金的费用</a></li>
+<li><a href="#%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E6%94%B6%E7%9B%8A%E6%9D%A5%E6%BA%90">债券基金的收益来源</a>
+<ul>
+<li><a href="#%E7%A5%A8%E6%81%AF%E6%94%B6%E7%9B%8A">票息收益</a></li>
+<li><a href="#%E5%80%BA%E5%88%B8%E4%BB%B7%E5%B7%AE%E6%94%B6%E7%9B%8A">债券价差收益</a></li>
+<li><a href="#%E6%9D%83%E7%9B%8A%E5%B8%82%E5%9C%BA%E6%8A%95%E8%B5%84%E6%94%B6%E5%85%A5">权益市场投资收入</a></li>
+</ul>
+</li>
+<li><a href="#%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E9%A3%8E%E9%99%A9">债券基金的风险</a></li>
+<li><a href="#%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E4%BC%98%E5%8A%A3%E5%8A%BF">债券基金的优劣势</a>
+<ul>
+<li><a href="#%E4%BC%98%E5%8A%BF">优势</a></li>
+<li><a href="#%E5%8A%A3%E5%8A%BF">劣势</a></li>
+</ul>
+</li>
+<li><a href="#%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91">如何选择债券基金</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="债券基金"><a class="header" href="#债券基金">债券基金</a></h1>
+<p>如果你只想进行低风险的理财配置，那么低风险的债券基金是一个不错的选择。</p>
+<h2 id="什么是债券"><a class="header" href="#什么是债券">什么是债券</a></h2>
+<p>提到 <strong>债券基金</strong>，一定先说 <strong>债券</strong>，所谓 <strong>债券</strong> 就是<code>各类机构面向社会筹措资金时，向投资者发行的、承诺按一定利率支付利息并到期偿还本金的债权债务凭证</code>。我们通常说的 <strong>债券</strong> 指的是 <strong>国债</strong> 以及上市公司发行的 <em>高信用等级</em> 的 <strong>信用债</strong>。</p>
+<h2 id="什么是债券基金"><a class="header" href="#什么是债券基金">什么是债券基金</a></h2>
+<p>顾名思义，<em>专门投资于债券的基金</em>，就是 <strong>债券基金</strong>，按监管要求，<code>80%</code>之上资金投资于债券的基金才成为<code>债券基金</code>，<code>债券基金</code>主要投资对象就是<code>各类国债</code>、不同类型的<code>金融债</code>、<code>企业债</code>。由于有固定的利息汇报并能到期还本，相比股票基金来说，<em>债券基金具有稳定、风险较低的特点</em>。</p>
+<h2 id="债券的种类"><a class="header" href="#债券的种类">债券的种类</a></h2>
+<h3 id="国债"><a class="header" href="#国债">国债</a></h3>
+<p><strong>国债</strong>包括<code>1年期</code>内的<code>短期债</code>，<code>1-10年</code>的<code>中期债</code>、<code>10年之上</code>的<code>长期债</code>，因为有国家信用担保，国债信用风险极低，可以说基本上都会兑付，收益率大约在<code>2%—4%</code>之间。</p>
+<h3 id="信用债"><a class="header" href="#信用债">信用债</a></h3>
+<p><strong>信用债</strong> 顾名思义，没有任何资产作为担保，<code>债券</code>的发售完全建立在<code>债权人</code>对<code>借债主体</code>信任的基础上，<em>风险大，收益相对也更高</em>。<code>中高等级信用债</code>是指信用评级在<code>AA级</code>之上，违约的风险相对较小，评级在这个级别之上的大多数是<code>大型企业</code>，资金实力比较雄厚，投资者对这种公司有信任才会认购公司发的<code>债券</code>。一般来说，<em>信用评级越高，信誉度也就会更高，违约风险越小</em>。</p>
+<h3 id="可转债"><a class="header" href="#可转债">可转债</a></h3>
+<p><strong>可转债</strong>，做股票的朋友肯定不陌生，是上市公司发行的一种<code>可转换债券</code>，<em><code>债券</code>一般期限不到5年，流动性好，可以直接在股票市场上买卖交易，债券基金可以通过购买可转债，来获得价差，增强基金收益</em>。</p>
+<h2 id="债券基金的分类"><a class="header" href="#债券基金的分类">债券基金的分类</a></h2>
+<p>按投资方向不同，可以划分三个类型。</p>
+<h3 id="纯债基金"><a class="header" href="#纯债基金">纯债基金</a></h3>
+<p>这种基金只能将资金投资于债券市场，不能投入其他市场。</p>
+<h3 id="非纯债基金"><a class="header" href="#非纯债基金">非纯债基金</a></h3>
+<p><strong>非纯债基金</strong> 还可以把资金的<code>20%</code>拿出来去购买<code>非债券产品</code>，也就是大家还经常听说<code>一级债基</code>与<code>二级债券</code>。</p>
+<p>这个也很好理解:</p>
+<p><code>一级债基</code>代表基金可以参与<code>新股申购</code>与<code>个股增发</code>、<code>可转债</code>。</p>
+<p><code>二级债券</code>可以购买<code>股票</code>或者<code>可转债</code>。</p>
+<p>在市场好的时候，非纯债基金的优势就会体现出来，因为可以配置一少部分的股票或者可转债，就收益来看，取得的回报肯定会大于纯债基金，但权益市场不好的时候，收益也会比不过纯债基金了。</p>
+<h3 id="可转债基金"><a class="header" href="#可转债基金">可转债基金</a></h3>
+<p><strong>可转债基金</strong> 其投资的标的主要是<code>可转债</code>与<code>可交换债</code>，如果遇到股票市场行情上涨，<code>可转债</code>价格也会上涨，那么<code>可转债基金</code>也会获得超额收益。</p>
+<p>简单总结下，如果说风险与收益是相对的，那么这几种类型的风险收益比是，<strong>可转债基金</strong> 大于 <strong>二级债基</strong> 大于 <strong>一级债基</strong> 大于 <strong>纯债基金</strong>。</p>
+<h2 id="债券基金的费用"><a class="header" href="#债券基金的费用">债券基金的费用</a></h2>
+<p>同其他基金一样，<strong>债券基金</strong>也有<code>申购赎回费</code>、<code>管理费</code>等等，<strong>一般债券基金分为A\B\C三类</strong>，分别代表不同的收费方式，<strong>A类</strong>为<code>前段收费</code>，<strong>B类</strong>为<code>后端收费</code>，<strong>C类</strong>为<code>无申购赎回费收取销售服务费</code>。</p>
+<p>投资者可以根据自己投资期限来选择不同的品种，简单说<code>短期买卖选C</code>，<code>长期小资金选B</code>，<code>大资金选A类</code>。</p>
+<h2 id="债券基金的收益来源"><a class="header" href="#债券基金的收益来源">债券基金的收益来源</a></h2>
+<p>很多投资者会问，债券基金的怎么赚钱的呢，一般来说有以下几个收益来源。</p>
+<h3 id="票息收益"><a class="header" href="#票息收益">票息收益</a></h3>
+<p>这个是 <strong>债券基金买债券的主要收益来源</strong>，所谓 <strong>票息收益</strong> 就是 <code>债券持有到期所获得的利息收入</code>。</p>
+<p>假设一个基金持有一张债券，面值为<code>100元</code>，三年前，票面利息是每年<code>4.9%</code>，那么基金持有这一张债券的收益就是<code>100*3*4.9%=14.7元</code>。</p>
+<h3 id="债券价差收益"><a class="header" href="#债券价差收益">债券价差收益</a></h3>
+<p>债券价差收入，<em>债券交易主要是在银行间市场与交易所</em>，受<code>市场利率</code>、<code>流动性</code>等影响，<code>债券价格</code>是在波动的，波动就有<code>价差</code>，当然债券主要靠基金经理的运作来获得。</p>
+<h3 id="权益市场投资收入"><a class="header" href="#权益市场投资收入">权益市场投资收入</a></h3>
+<p><strong>二级债基</strong> 可以投资<code>股票</code>、<code>可转债</code>等等，也就是可以通过<code>股票投资</code>增厚收益，一般来说<code>基金</code>会根据股票市场的行情调整股票投资占比，获得股票上涨的收益。</p>
+<h2 id="债券基金的风险"><a class="header" href="#债券基金的风险">债券基金的风险</a></h2>
+<p>债券基金投资也有<code>风险</code>，除了<code>债券</code>（股票）价格<code>涨跌的风险</code>外，还有<code>债券</code>的<code>信用风险</code>。</p>
+<p>如果这个<code>债基</code>持有的<code>债券</code>，<em>债务人不能及时还钱，那么基金收益肯定会收到影响</em>。这几年大家也能听过一些<code>债务违约</code>新闻，现在<em>机构对<code>地方政府</code>、<code>企业发行</code>的<code>债券</code>都会持怀疑态度，特别是公司发的债券，很多公司表面经营状况不错，但不排除出现突发事件导致财务状况恶化的结果</em>。</p>
+<h2 id="债券基金的优劣势"><a class="header" href="#债券基金的优劣势">债券基金的优劣势</a></h2>
+<h3 id="优势"><a class="header" href="#优势">优势</a></h3>
+<ol>
+<li><strong>分散持仓，分散风险</strong></li>
+<li><strong>流动性好</strong>：急用钱直接卖就可以</li>
+<li><em>持有成本是相对于股票基金来说比较低</em>。</li>
+<li><strong>收益稳健，波动小</strong>，对于一些追求稳健回报的投资者来说，<strong>债券基金</strong>是不二之选。</li>
+</ol>
+<h3 id="劣势"><a class="header" href="#劣势">劣势</a></h3>
+<ol>
+<li>债券基金具有<code>回报率低</code>、<code>波动小</code>的特点。这决定了债券基金一直是小步慢跑的姿态，<em>短期内难以获得相对满意的收益</em>。</li>
+<li><em>股票牛市时会大幅跑输股票基金</em>，拉长时间来看，<em><strong>债券基金</strong>能实现年化4%的收益</em>，但在股票牛市中，<strong>债券基金</strong> `真的连股票基金的陪跑选手都算不上。</li>
+</ol>
+<h2 id="如何选择债券基金"><a class="header" href="#如何选择债券基金">如何选择债券基金</a></h2>
+<p>债券基金波动比较小，所以在自己投资的资产组合里加入<strong>债券类资金</strong>，能降低我们投资组合的波动。</p>
+<ol>
+<li>选<strong>大基金公司的债基产品</strong>。</li>
+<li>看基金的 <strong>成立时间和规模</strong>：成立时间太短，说明运作还没有稳定，业绩没办法评估。</li>
+<li>看基金的 <strong>历年的收益率</strong>：因为这是一只激进的保守型基金，所以看它的最高收益和最低收益非常重要。<strong>激进</strong>，看它有没有 <em>超越市场平均水平</em>。<strong>保守</strong>，看<em>股市、债市暴跌时，它的最低收益是多少</em>。这样能对比出其中的风险和预期收益。</li>
+<li>看基金经理的 <strong>变动情况</strong>。基金经理经常变动，不建议选择。因为业绩得不到保证。</li>
+<li>看<strong>费率</strong>：费率太高，持有成本就高，最好比较一下，选费率低的，节约长时间投资的成本。</li>
+</ol>
+<blockquote>
+<p><strong>总结</strong></p>
+<p><strong>债券基金</strong>的 <em><code>收益率</code>和<code>风险</code>（年化波动了、最大回撤）都小于股票基金</em>。</p>
+<p>其中 <strong>二级债基金</strong> 配置了不高于<code>20%</code>仓位的股票，收益和风险均有一定程度放大。</p>
+<p>所以，<strong>债券基金</strong>比较适合那些<em>追求稳健回报的低风险偏好投资人</em>。</p>
+<p>此外，<strong>债券基金</strong>可以有效平滑投资组合的收益曲线，降低回撤。</p>
+<p><strong>债券基金</strong> 在资产配置中是不可或缺的一项，很多投资者会把自己资产的一部分来买入<code>债基</code>，这样获得一定稳定的收益。一部分来买<code>股票基金</code>，来增强收益。</p>
+<p>想购买债基的朋友，可以打开<code>国泰君安君弘</code>APP，在<code>理财栏目</code>找到<code>基金页面</code>，选择里面的<code>人气债基</code>，了解即可。</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../fund/finance_management04.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../fund/finance_management04.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

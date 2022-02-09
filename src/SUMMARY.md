@@ -13,3 +13,4 @@
   - [常用术语](./fund/finance_management03.md)
   - [指数基金](./fund/finance_management04.md)
   - [债券基金](./fund/finance_management05.md)
+  - [基金理财二十问](./fund/finance_20_question.md)

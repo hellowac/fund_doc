@@ -14,3 +14,4 @@
   - [指数基金](./fund/finance_management04.md)
   - [债券基金](./fund/finance_management05.md)
   - [基金理财二十问](./fund/finance_20_question.md)
+  - [EFT基金精要](./fund/finance_etf.md)

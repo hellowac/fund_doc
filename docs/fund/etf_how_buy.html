@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ETF基金怎么买 - 与资本,基本,股票,商业有关的知识汇总</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../tutorial.html">简介</a></li><li class="spacer"></li><li class="chapter-item expanded "><div>认识商业</div></li><li class="chapter-item expanded "><a href="../stock/index.html">股票</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/dividend.html">股票分红</a></li></ol></li><li class="chapter-item expanded "><a href="../fund/index.html">基金</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/finance_management01.html">基金入门</a></li><li class="chapter-item "><a href="../fund/finance_management02.html">基金常识</a></li><li class="chapter-item "><a href="../fund/finance_management03.html">常用术语</a></li><li class="chapter-item "><a href="../fund/finance_management04.html">指数基金</a></li><li class="chapter-item "><a href="../fund/finance_management05.html">债券基金</a></li><li class="chapter-item "><a href="../fund/finance_20_question.html">基金理财二十问</a></li></ol></li><li class="chapter-item expanded "><a href="../fund/finance_etf.html">EFT基金精要</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/index_fund.html">指数基金家族</a></li><li class="chapter-item "><a href="../fund/etf_fund_guide.html">ETF基金简介</a></li><li class="chapter-item "><a href="../fund/etf_fund_advantage.html">ETF基金优势</a></li><li class="chapter-item "><a href="../fund/etf_vs_stock.html">ETF VS 股票</a></li><li class="chapter-item expanded "><a href="../fund/etf_how_buy.html" class="active">ETF基金怎么买</a></li><li class="chapter-item "><a href="../fund/etf_how_choice.html">ETF基金怎么选</a></li><li class="chapter-item "><a href="../fund/etf_investment_strategy.html">ETF基金投资策略</a></li><li class="chapter-item "><a href="../fund/etf_how_configure.html">ETF基金配置策略</a></li><li class="chapter-item "><a href="../fund/smart_beta_guide.html">Smart Beta基金简介</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">与资本,基本,股票,商业有关的知识汇总</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li>
+<p><a href="#etf%E5%9F%BA%E9%87%91%E6%80%8E%E4%B9%88%E4%B9%B0">ETF基金怎么买</a></p>
+<ul>
+<li><a href="#%E4%B8%80%E8%AF%81%E5%88%B8%E8%B4%A6%E6%88%B7%E5%BC%80%E6%88%B7%E5%BF%85%E5%A4%87%E6%AD%A5%E9%AA%A4">一、证券账户开户【必备步骤】</a></li>
+<li><a href="#%E4%BA%8C%E5%A4%A7%E6%8A%95%E8%B5%84%E6%96%B9%E6%B3%95">二、大投资方法</a>
+<ul>
+<li><a href="#%E6%96%B9%E6%B3%951etf%E4%BA%8C%E7%BA%A7%E5%B8%82%E5%9C%BA%E4%BA%A4%E6%98%93">方法1：ETF二级市场交易</a></li>
+<li><a href="#%E6%96%B9%E6%B3%952etf%E8%AE%A4%E8%B4%AD">方法2：ETF认购</a></li>
+</ul>
+</li>
+<li><a href="#%E9%82%A3%E4%B9%88%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E8%82%A1%E7%A5%A8%E6%8D%A2%E8%B4%ADetf">那么如何通过股票换购ETF?</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E4%BA%86%E8%A7%A3%E8%82%A1%E7%A5%A8%E6%98%AF%E5%90%A6%E7%AC%A6%E5%90%88%E6%8D%A2%E8%B4%AD%E8%A6%81%E6%B1%82">如何了解股票是否符合换购要求？</a></li>
+</ul>
+</li>
+<li>
+<p>视频: <a href="https://caifuhao.eastmoney.com/news/20211224173414511990850">https://caifuhao.eastmoney.com/news/20211224173414511990850</a></p>
+</li>
+</ul>
+<h1 id="etf基金怎么买"><a class="header" href="#etf基金怎么买">ETF基金怎么买</a></h1>
+<p>之前给大家介绍过了，ETF的中文全称是“交易型开放式指数基金”，顾名思义，它既可以在二级市场像股票一样进行买卖“交易”，又可以像一般的“开放式”基金一样，通过场外渠道申购或赎回基金份额。但以股票ETF为例，它的申购赎回需要持有一篮子股票去跟基金公司交换份额，资金的参与门槛可能高达百万元，所以一般只有大户投资者和机构投资者参与。</p>
+<p>那么ETF究竟该怎么买呢？总的来说，个人投资者参与ETF投资的流程主要可以分为1个必备步骤和2大投资方法，让我们来逐一了解一下。</p>
+<h2 id="一证券账户开户必备步骤"><a class="header" href="#一证券账户开户必备步骤">一、证券账户开户【必备步骤】</a></h2>
+<p><strong>投资者参与ETF交易，需要有一个交易所证券账户（股票账户或证券投资基金账户）。没有的话，可以带上身份证去证券公司营业部办理或者通过证公司官方APP在线开立。开户同时可以了解清楚交易佣金的收费情况，佣金不高于成交金额的0.3％，可能有个最低5元的要求。</strong></p>
+<p>投资者进行现金认购和二级市场买卖ETF份额，可使用股票账户或证券投资基金账户。投资者进行网下股票认购和申购、赎回ETF份额，则必须使用股票账户。</p>
+<h2 id="二大投资方法"><a class="header" href="#二大投资方法">二、大投资方法</a></h2>
+<h3 id="方法1etf二级市场交易"><a class="header" href="#方法1etf二级市场交易">方法1：ETF二级市场交易</a></h3>
+<p>开立完证券账户后，投资者就可以使用券商APP客户端，在盘中像买卖股票一样，根据市价买卖ETF份额了。ETF的二级市场交易时间和股票一致，每个交易日的上午9：30—11：30，下午1：00—3：00。</p>
+<p>买入时需要输入拟投资的ETF场内代码，设定交易的价格和数量，即可委托下单，等待是否成交；卖出同理。交易价格可以参考每15秒就更新一次的参考性基金单位净值（IOPV）。最小的成交单位也是“一手”，一手交易就是100份ETF份额，通常每份ETF单价也就几元钱，算是一个门槛较低的参与方式。</p>
+<p>二级市场买卖ETF不存在申购费和赎回费，在卖出时也无需像股票一样缴纳印花税，涉及的交易费用只有交易佣金。</p>
+<h3 id="方法2etf认购"><a class="header" href="#方法2etf认购">方法2：ETF认购</a></h3>
+<p><strong>在ETF的募集期内，普通投资者也可以通过网上认购和网下认购等途径，认购ETF份额。网上认购：投资者可在交易日交易时间内，使用在券商开立的证券账户，通过证券公司营业部柜台、电话委托及网上交易系统网上认购基金份额。</strong></p>
+<p>网上认购采取现金形式，以份额申报，不可撤单。单一账户每笔认购份额应为1000份或其整数倍，最高不得超过99，999，000份。如果觉得一笔没买够，投资者也可以多次认购，对累计认购份额没有设置上限。ETF基金的发行价格一般为1元，所以投资者认购的最低门槛一般为1000＋元起（认购金额还包括应缴纳的佣金）。</p>
+<p><strong>网下认购</strong>：投资者可通过基金公司各地的投资理财中心或证券公司各营业网点使用现金认购或股票换购。</p>
+<p>通过基金公司的投资理财中心现金认购，最低认购限额为5万份；通过证券公司购买，每笔认购份额需为1000份或其整数倍。其中投资者进行网下股票认购时原则上可以用单只或多只成份股票进行换购。</p>
+<table><thead><tr><th><strong>网上认购</strong></th><th><strong>网下认购</strong></th></tr></thead><tbody>
+<tr><td><strong>现金认购</strong>：投资者通过指定的发售代理机构，用交易所网上系统以现金进行认购。</td><td><strong>现金认购</strong>：投资者通过基金管理人及其指定的发售代理机构以现金进行认购。 <br/>   <strong>股票认购</strong>：投资者通过基金管理人及其定的发售代理机构以指股票进行认购。</td></tr>
+</tbody></table>
+<h2 id="那么如何通过股票换购etf"><a class="header" href="#那么如何通过股票换购etf">那么如何通过股票换购ETF?</a></h2>
+<p>我们以科创50ETF为例，在该ETF的股票认购期内，投资者将符合规定的科创50指数成分股“等价交换”成新发行的“科创50ETF”份额，就算完成了股票换购。</p>
+<p>股票换购ETF的“股票价格”按照网下股票认购期最后一天的均价计算，被换购的ETF的价格为1元人民币/份。</p>
+<p>举例：网下股票认购期最后一天，科创50指数的成分股A股票日均价为50元，则1000股A股票就可换购50＊1000/1＝50000份科创50ETF份额（为计算简便，此处假设不计手续费）。若A股票在当日停牌或无成交，则以同样的方法计算最近一个交易日的均价作为计算价格。</p>
+<p>股票换购还有最低限额的要求。网下股票换购以单只股票股数申报。单只股票最低认购申报股数为1000股，超过1000股的部分需为100股的整数倍。投资者应以A股账户认购，可以多次提交认购申请。</p>
+<h2 id="如何了解股票是否符合换购要求"><a class="header" href="#如何了解股票是否符合换购要求">如何了解股票是否符合换购要求？</a></h2>
+<p>可以在基金发售公告的“网下股票认购清单中”查看。另外，在募集结束前，如果指数公司调整标的指数成份股，则调入的新股票将也纳入认购清单。</p>
+<p>对于在网下股票认购期间价格波动异常或认购申报数量异常的个股，基金公司可不经公告，全部或部分拒绝该股票的认购申报。所以此间踩雷的个股往往是不能换购的。</p>
+<p>ETF基金发行完毕后，一般会有不超过3个月的封闭期（目前一般在10—20天左右），走完一系列流程后即可发行上市，具体可以关注基金公司发布的上市交易公告书。ETF上市后，就可以正常在二级市场进行交易啦。</p>
+<p>看完了ETF买卖方式的详细介绍，大家遇到心仪的ETF也可在第一时间上车啦！</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../fund/etf_vs_stock.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../fund/etf_how_choice.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../fund/etf_vs_stock.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../fund/etf_how_choice.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

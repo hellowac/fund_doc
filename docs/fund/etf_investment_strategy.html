@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ETF基金投资策略 - 与资本,基本,股票,商业有关的知识汇总</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../tutorial.html">简介</a></li><li class="spacer"></li><li class="chapter-item expanded "><div>认识商业</div></li><li class="chapter-item expanded "><a href="../stock/index.html">股票</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/dividend.html">股票分红</a></li></ol></li><li class="chapter-item expanded "><a href="../fund/index.html">基金</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/finance_management01.html">基金入门</a></li><li class="chapter-item "><a href="../fund/finance_management02.html">基金常识</a></li><li class="chapter-item "><a href="../fund/finance_management03.html">常用术语</a></li><li class="chapter-item "><a href="../fund/finance_management04.html">指数基金</a></li><li class="chapter-item "><a href="../fund/finance_management05.html">债券基金</a></li><li class="chapter-item "><a href="../fund/finance_20_question.html">基金理财二十问</a></li></ol></li><li class="chapter-item expanded "><a href="../fund/finance_etf.html">EFT基金精要</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/index_fund.html">指数基金家族</a></li><li class="chapter-item "><a href="../fund/etf_fund_guide.html">ETF基金简介</a></li><li class="chapter-item "><a href="../fund/etf_fund_advantage.html">ETF基金优势</a></li><li class="chapter-item "><a href="../fund/etf_vs_stock.html">ETF VS 股票</a></li><li class="chapter-item "><a href="../fund/etf_how_buy.html">ETF基金怎么买</a></li><li class="chapter-item "><a href="../fund/etf_how_choice.html">ETF基金怎么选</a></li><li class="chapter-item expanded "><a href="../fund/etf_investment_strategy.html" class="active">ETF基金投资策略</a></li><li class="chapter-item "><a href="../fund/etf_how_configure.html">ETF基金配置策略</a></li><li class="chapter-item "><a href="../fund/smart_beta_guide.html">Smart Beta基金简介</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">与资本,基本,股票,商业有关的知识汇总</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li>
+<p><a href="#etf%E5%9F%BA%E9%87%91%E6%8A%95%E8%B5%84%E7%AD%96%E7%95%A5">ETF基金投资策略</a></p>
+<ul>
+<li><a href="#%E7%AD%96%E7%95%A51%E4%B9%B0%E5%85%A5%E5%B9%B6%E6%8C%81%E6%9C%89">策略1：买入并持有</a></li>
+<li><a href="#%E7%AD%96%E7%95%A52%E5%AE%9A%E6%8A%95">策略2：定投</a></li>
+<li><a href="#%E7%AD%96%E7%95%A53%E9%87%91%E5%AD%97%E5%A1%94%E5%BC%8F%E7%AD%96%E7%95%A5">策略3：金字塔式策略</a></li>
+<li><a href="#%E7%AD%96%E7%95%A54%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5">策略4：网格交易策略</a></li>
+</ul>
+</li>
+<li>
+<p>视频1: <a href="https://caifuhao.eastmoney.com/news/20220111154613804459880">https://caifuhao.eastmoney.com/news/20220111154613804459880</a></p>
+</li>
+<li>
+<p>视频2: <a href="https://caifuhao.eastmoney.com/news/20220119155700672227370">https://caifuhao.eastmoney.com/news/20220119155700672227370</a></p>
+</li>
+</ul>
+<h1 id="etf基金投资策略"><a class="header" href="#etf基金投资策略">ETF基金投资策略</a></h1>
+<p>随着股市中长期向好发展，普通投资者参与ETF投资，期待分享指数上涨收益的意愿也在不断加强。那么，如何更好地运用ETF这一投资工具，通过简单的买卖就能实现投资目标呢？</p>
+<p>在开始实操之前，各位投资者需要认识到，在投资过程中建立一套属于自己的策略是十分重要的。我们发现，市场中有相当一部分的投资者其实并没有成熟稳定的策略来规范自己的交易动作。<em>他们偏爱短线操作，被套之后又无奈变成“价值投资” ；在选股、选基金方面往往通过道听途说，或者追逐市场热点；择时方面时而青昧抄底、时而追涨杀跌。而无论是买入还是卖出，都难有充分的逻辑，时长仅凭一时的情绪</em>。历史经验告诉我们，这样的投资往往者很难盈利，而更关键的是，他们很难通过一次次的亏损总结经验教训，下一次投资的结果可能还是亏损。</p>
+<blockquote>
+<p>为什么拥有自己的策略是如此重要呢？</p>
+</blockquote>
+<blockquote>
+<p><strong>第一，没有交易策略意味着无法吸取经验，成长进步</strong>。好的策略都是在不断的实践中发现问题，优化改善而形成的。没有策略意味着连自己错在哪里都很难定位，没有优化的对象。</p>
+<p><strong>第二、拥有一套策略可以保证交易的纪律性，缓解投资者对于市场波动的担忧，减少情绪主导的错误操作的可能性</strong>。</p>
+</blockquote>
+<p>那么下文将介绍一些常见的策略。<strong>首先要明确，各种策略并没有优劣之分，复杂的策略未必在盈利上优于简单的策略。而要结合投资者的能力、风险偏好，投资风格以及市场风格综合选择。匹配个人特质的才是合适的策略。</strong></p>
+<p>在这里我们想着重强调的是，寻找最佳的策略并不是最重要的（一般也没有最佳策略），而 <strong>拥有自己的策略并能执行且不断迭代优化该策略的理念才是更为重要的</strong>。</p>
+<h2 id="策略1买入并持有"><a class="header" href="#策略1买入并持有">策略1：买入并持有</a></h2>
+<p>这可能是操作层面上最简单的策略，即买入ETF基金后坚持持有，不轻易卖出。虽看似简单，但却是很多投资者主要收益的来源。其主要理念是让优秀公司的价值在时间长河中逐步得到体现，优秀指数的收益不断积累，做时间的朋友。</p>
+<p>该策略对买入的择时要求并不高，因为投资期限一般较长，买入时机的偏差并不会显著影响最终的收益。而且避免了短期频繁操作，较为省心省力。</p>
+<p>该策略对投资者的考验主要集中在两点：</p>
+<ol>
+<li><strong>心态上</strong>。我们能否耐得住寂寞，能否在市场剧烈波动的环境下平稳心态。长期持有过程中，总会遇到其他基金猛涨而自己持有的涨幅远远落后甚至下跌的情况，或者是市场调整导致出现长时间浮亏的现象。此时要考验我们是否还能坚持自己最初的判断，坚定持有。</li>
+<li><strong>选择ETF产品的能力上</strong>。长线持有其实更加考验我们对于某一行业/主题，或指数长期投资价值的判断能力。如果判断失误，可能导致长时间的浮亏，以及大量资金的占用。</li>
+</ol>
+<p>综上，对于买入并持有的策略，比较适合以下的情形：</p>
+<table><thead><tr><th><strong>资金期限</strong></th><th><strong>对投资者的要求</strong></th></tr></thead><tbody>
+<tr><td>中长期资金</td><td>具备一定的长线判断能力；具备中短期风险承受能力。<br/> 不需要频繁交易</td></tr>
+</tbody></table>
+<h2 id="策略2定投"><a class="header" href="#策略2定投">策略2：定投</a></h2>
+<p>我们耳熟能详且被广泛使用的策略。即按既定规则以分散的时间买入。<strong>如果上涨则利好已买入的份额，如下跌则可以通过后续买入摊薄成本。</strong></p>
+<p><em>由于定投策略分散了风险，它放宽了对交易能力的要求，让很多缺乏丰富交易经验的投资者也能参与到基金的投资中来</em>。<strong>定投省心省力，可以结合市场行情根据规则决定买入数量，平滑成本曲线</strong>；定期投资的理念也让投资者避免了因市场波动造成的心理波动。<strong>虽然在大牛市中，定投策略导致成本会不断升高，造成收益率不及低位一次买入，但是在波动的市场中，定投则会显示出它的有效性</strong>。事实上，我们在投资过程中，更多面对的，也是震荡的行情。</p>
+<p>诚然，定投是一种中长期投资策略，因此对投资者也有一定要求。<em><strong>首先是现金流需要合理规划；其次是能够承受长期下跌的浮亏造成的压力，并坚持定投；最后是设计合理的止盈策略</strong></em>。</p>
+<p>综上，对于定投策略，比较适合以下的情形：</p>
+<table><thead><tr><th><strong>资金期限</strong></th><th>对投资者的要求</th><th>适合市场风格</th></tr></thead><tbody>
+<tr><td>中长期资金，要合理规划</td><td>无需保持对行情的高关注度，按部就班交易即可。对交易经验要求不高，但需具备中长期风险承受能力。</td><td>市场具有一定波动性， 非单边上涨或下跌</td></tr>
+</tbody></table>
+<h2 id="策略3金字塔式策略"><a class="header" href="#策略3金字塔式策略">策略3：金字塔式策略</a></h2>
+<p>金字塔式策略分为<code>买入和卖出策略</code>两部分。买入采用正金字塔，卖出采用倒金字塔。如下表：</p>
+<blockquote>
+<p>表1：用金字塔方法<code>建仓</code>示意图</p>
+<p><img src="../images/etf%E9%87%91%E5%AD%97%E5%A1%94%E4%B9%B0%E5%85%A5%E7%AD%96%E7%95%A5.png" alt="金字塔买入策略" title="金字塔买入策略" /></p>
+<table><thead><tr><th><strong>价格</strong></th><th><strong>份数</strong></th></tr></thead><tbody>
+<tr><td>价格2元</td><td>买1000份</td></tr>
+<tr><td>价格1.5元</td><td>买2000份</td></tr>
+<tr><td>价格1元</td><td>买4000份</td></tr>
+</tbody></table>
+<p><strong>对于买入</strong>：低价位时买入较大仓位，高价位时买入较小仓位。价格上升时，买入数量逐步减少；价格下跌时，买入数量逐渐增多。</p>
+</blockquote>
+<blockquote>
+<p>表2：用金字塔方法<code>卖出ETF</code>示意图</p>
+<p><img src="../images/etf%E9%87%91%E5%AD%97%E5%A1%94%E5%8D%96%E5%87%BA%E7%AD%96%E7%95%A5.png" alt="金字塔卖出策略" title="金字塔卖出策略" /></p>
+<table><thead><tr><th><strong>价格</strong></th><th><strong>份数</strong></th></tr></thead><tbody>
+<tr><td>价格3元</td><td>卖4000份</td></tr>
+<tr><td>价格2.5元</td><td>卖2000份</td></tr>
+<tr><td>价格2元</td><td>卖1000份</td></tr>
+</tbody></table>
+<p><strong>对于卖出</strong>：低价位时卖出较小仓位，高价位时卖出较大仓位。价格上升时，卖出数量逐步增多；价格下跌时，卖出数量逐渐减少。</p>
+</blockquote>
+<p>显然，金字塔策略缓解了我们对于择时的要求，<strong>其核心理念是既然我们把握不到最佳的一次性买卖时机，那就分批次买卖，尽可能做到低位多买少卖，而高位多卖少买。</strong></p>
+<p>那么该策略的问题也随之而来。<strong>首先</strong> <em>对于未来一段时间的价格走势需要做出判断</em>，<strong>其次</strong> <em>还要大致估计未来价格底部与顶部，分配不同价位所对应的仓位</em>*。如果判断与实际情况偏差较大，那么收益率将受到影响*。比如说在<code>牛市</code>中，我们判断的价格顶部很早就会到来，卖出后将无法获得后续市场大幅上涨带来的利润。又或是在下跌行情中，我们很可能在价格未到底部时就已经将全部仓位买入完毕，导致成本较高。</p>
+<p>综上，对于金字塔策略，比较适合以下的情形：</p>
+<table><thead><tr><th>资金期限</th><th>对投资者的要求</th><th>适合市场风格</th></tr></thead><tbody>
+<tr><td>皆可</td><td>需要保持对行情的关注，时常操作；<br/> 能够对未来行情的走势有一定判断</td><td>市场具有一定波动性，<br/> 非单边上涨或下跌</td></tr>
+</tbody></table>
+<h2 id="策略4网格交易策略"><a class="header" href="#策略4网格交易策略">策略4：网格交易策略</a></h2>
+<p>网格策略是更加程序化的一种策略，制定好交易规则后，就不再依赖人的判断。该策略将价格的波动区间内放置一张网格：</p>
+<blockquote>
+<p>价格下跌到达一定网格点的位置就买入一部分仓位，继续下跌到下一个网格点就继续买入同样的仓位。</p>
+<p>上涨到某一格点位置卖出一定仓位份额，继续上涨至下一格点位置就继续卖出。</p>
+</blockquote>
+<p>网格策略会制定好每一个买入及卖出的价格和份额，一旦价格触及就进行交易。</p>
+<p><img src="../images/etf%E7%BD%91%E6%A0%BC%E4%B9%B0%E5%8D%96%E7%AD%96%E7%95%A5.png" alt="etf网格买卖策略" title="etf网格买卖策略" /></p>
+<p>该策略的优势是完全排除了投资者情绪对交易造成的干扰，让投资者从交易的判断中解脱出来，只需要执行即可。而且该策略在震荡市中具有良好的效果，可以实现低位积累筹码并在高位卖出。</p>
+<p>但是，该策略也有 <strong>局限性</strong> 。<strong>首先，当价格在一定范围内波动时，网格策略的效果最佳。但是一旦价格向上突破，我们可能已经全部卖出导致空仓，在牛市中收益率偏低；当价格向下突破，我们可能会已经耗尽全部资金，在长期熊市中承受浮亏。此外，该策略的资金使用效率不高，如果价格没有进入相应档位，那么我们可能长期保持轻仓状态，总体收益率受损。</strong></p>
+<p>综上，对于网格交易策略，比较适合以下的情形：</p>
+<table><thead><tr><th>资金期限</th><th>对投资者的要求</th><th>适合市场风格</th></tr></thead><tbody>
+<tr><td>皆可</td><td>需要密切关注市场，可以做到频繁交易，可以坚决执行策略。</td><td>市场具有一定波动性，震荡市尤佳，非单边上涨或下跌</td></tr>
+</tbody></table>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../fund/etf_how_choice.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../fund/etf_how_configure.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../fund/etf_how_choice.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../fund/etf_how_configure.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

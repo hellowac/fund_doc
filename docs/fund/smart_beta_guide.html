@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Smart Beta基金简介 - 与资本,基本,股票,商业有关的知识汇总</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../tutorial.html">简介</a></li><li class="spacer"></li><li class="chapter-item expanded "><div>认识商业</div></li><li class="chapter-item expanded "><a href="../stock/index.html">股票</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/dividend.html">股票分红</a></li></ol></li><li class="chapter-item expanded "><a href="../fund/index.html">基金</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/finance_management01.html">基金入门</a></li><li class="chapter-item "><a href="../fund/finance_management02.html">基金常识</a></li><li class="chapter-item "><a href="../fund/finance_management03.html">常用术语</a></li><li class="chapter-item "><a href="../fund/finance_management04.html">指数基金</a></li><li class="chapter-item "><a href="../fund/finance_management05.html">债券基金</a></li><li class="chapter-item "><a href="../fund/finance_20_question.html">基金理财二十问</a></li></ol></li><li class="chapter-item expanded "><a href="../fund/finance_etf.html">EFT基金精要</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/index_fund.html">指数基金家族</a></li><li class="chapter-item "><a href="../fund/etf_fund_guide.html">ETF基金简介</a></li><li class="chapter-item "><a href="../fund/etf_fund_advantage.html">ETF基金优势</a></li><li class="chapter-item "><a href="../fund/etf_vs_stock.html">ETF VS 股票</a></li><li class="chapter-item "><a href="../fund/etf_how_buy.html">ETF基金怎么买</a></li><li class="chapter-item "><a href="../fund/etf_how_choice.html">ETF基金怎么选</a></li><li class="chapter-item "><a href="../fund/etf_investment_strategy.html">ETF基金投资策略</a></li><li class="chapter-item "><a href="../fund/etf_how_configure.html">ETF基金配置策略</a></li><li class="chapter-item expanded "><a href="../fund/smart_beta_guide.html" class="active">Smart Beta基金简介</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">与资本,基本,股票,商业有关的知识汇总</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li><a href="#smart-beta%E5%9F%BA%E9%87%91%E7%AE%80%E4%BB%8B">Smart Beta基金简介</a>
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AFbeta">什么是Beta？</a></li>
+<li><a href="#smart-beta%E6%8A%95%E8%B5%84%E6%AD%A3%E5%BD%93%E6%97%B6">Smart Beta投资正当时</a></li>
+<li><a href="#smart-beta%E9%95%BF%E6%9C%9F%E6%9D%A5%E7%9C%8B%E6%9C%89%E6%9C%9B%E6%88%98%E8%83%9C%E6%8C%87%E6%95%B0">Smart Beta长期来看有望战胜指数</a></li>
+</ul>
+</li>
+</ul>
+<p>视频: <a href="https://caifuhao.eastmoney.com/news/20220209135942203394760">https://caifuhao.eastmoney.com/news/20220209135942203394760</a></p>
+<h1 id="smart-beta基金简介"><a class="header" href="#smart-beta基金简介">Smart Beta基金简介</a></h1>
+<p>2020年以来，市场在震荡中上行，有一类ETF基金悄然无声的火了。作为市场关注度最高的<code>Smart Beta指数</code>之一，<code>创业板动量成长指数</code>（简称：<code>创成长</code>，代码：<code>399296</code>）近年来屡创新高，2020年以来累计涨幅超过<code>143%</code>，<em><strong>跑赢全市场所有宽基指数，排名第一</strong></em>！<em>数据来源：Wind，统计区问2020-1-1至2021-6-28</em></p>
+<p><code>Smart Beta指数</code>,看走势的确亮眼,听名字也 很高大上的样子。不要被它的名字吓退，其实翻译过来就是“聪明的指数”。那么它“聪明”在哪儿呢？</p>
+<h2 id="什么是beta"><a class="header" href="#什么是beta">什么是Beta？</a></h2>
+<p><strong>资本资产定价理论（CAPM）</strong> 告诉我们，投资组合的期望收益由两部分组成，其中：<em><code>a收益</code>为投资组合超越市场基准的收益</em>，<em><code>B收益</code>为投资组合承担市场系统风险而获得的收益</em>。</p>
+<ul>
+<li>
+<p><strong>a（阿尔法）</strong> 指<code>主动投资收益</code>，来源于选股和择时，是投资组合超越市场基准的收益。</p>
+</li>
+<li>
+<p><strong>β（贝塔）</strong> 指<code>被动投资收益</code>，是投资组合承担市场系统风险而获得的收益，跟随市场收益。</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>那么究竟什么是Smart Beta？</strong></p>
+<p>而所谓的<code>Smart Beta</code>，顾名思义，就是在<code>β</code>的基础上进行一些<code>Smart</code>的处理，简单来说就是在被动指数投资基础上，通过系统性的优化，加上点筛选指标，添上点主动投资的逻辑，以获得相应的超额收益。</p>
+<p>与普通的指数通过市值进行加权不同，<code>SmartBeta指数</code>可以通过某些因子或者某些策略（比如成长、价值、动量、波动率等）对指数的成分股或权重进行优化，以获得特定因子带来的收益。比如刚才提到的创成长指数，就是在创业板这个股票池里选最具备 <strong>“成长”</strong> 和 <strong>“动量”</strong> 特征的股票，创成长指数的收益既取决于创业板的表现、也取决于成长和动量这两个因子。对应的<code>Smart Beta指数基金</code>就会紧密跟踪创成长指数的表现。</p>
+</blockquote>
+<h2 id="smart-beta投资正当时"><a class="header" href="#smart-beta投资正当时">Smart Beta投资正当时</a></h2>
+<p>境外投资者调查报告显示，全球范围内资产管理机构对于<code>Smart Beta投资方式</code>的接受度进一步提升。在所调查的机构中，已经采用<code>Smart Beta策略</code>的机构投资者占比由2014年的<code>32%</code>上升至2019年的<code>58%</code>。</p>
+<p><code>Smart Beta产品</code>从诞生至今，仅仅10多年的时间。但发展迅速，已成为市场热门产品之-。以美国为例，2020年，美国市场新发<code>Smart Beta ETF</code>产品<code>105</code>只，规模合计<code>45.33</code>亿美元。同时，美国<code>Smart Beta ETF</code>产品数量达到<code>929</code>只，规模首次突破万亿，合计<code>1.16万亿</code>美元，同比增长<code>17.97%</code>。</p>
+<blockquote>
+<p><img src="../images/%E7%BE%8E%E5%9B%BDsmartbeta%E5%9F%BA%E9%87%91%E6%80%BB%E4%BD%93%E6%83%85%E5%86%B5.png" alt="美国Smart Beta ETF总体情况" title="美国Smart Beta ETF总体情况" /></p>
+<p>来源: <a href="https://finance.sina.com.cn/money/fund/fundzmt/2021-02-05/doc-ikftpnny5206568.shtml">2020年Smart Beta ETF发展报告</a></p>
+</blockquote>
+<p>此外，机构投资者也看好<code>Smart Beta策略</code>。具有百亿美元管理规模的机构投资者配置<code>Smart Beta策略</code>的比例由<code>2014年</code>的<code>46%</code>上升至<code>2019年</code>的<code>66%</code>，是配置意愿最强的机构类别。调查显示，机构投资者配置<code>Smart Beta策略</code>的主要目标是提升投资组合的收益，持有此项认知的机构投资者占比约为<code>68%</code>，其次的目标分别为降低风险、增强组合分散度等。</p>
+<blockquote>
+<p><img src="../images/%E6%9C%BA%E6%9E%84%E6%8A%95%E8%B5%84%E8%80%85%E9%87%87%E7%94%A8SmartBeta%E7%AD%96%E7%95%A5%E7%9A%84%E7%9B%AE%E6%A0%87.png" alt="机构投资者采用Smart Beta策略的目标" title="机构投资者采用Smart Beta策略的目标" /></p>
+<p>来源: <a href="https://finance.sina.com.cn/money/fund/fundzmt/2021-02-05/doc-ikftpnny5206568.shtml">2020年Smart Beta ETF发展报告</a></p>
+</blockquote>
+<p>截至<code>2020年</code>底，我国境内市场的<code>Smart BetaETF</code>数量虽然只有<code>30</code>只，但相比<code>2019</code>年的<code>25</code>只增长了<code>20.0%</code>，合计规模约为<code>178.2</code>亿元，从数量和规模是角度来说，与境外市场相比，仍存在很大的发展空间，具备较为广阔的发展潜力。<em>以上数据来源：Wind，中证指数公司等</em></p>
+<blockquote>
+<p>从境外市场经验来看， <code>Smart Beta策略</code>之所以能够兴起、壮大和发展，<strong>一是因为<code>Smart Beta产品</code>可以长期战胜指数，是一个很好的资产配置选择。二是因为投资者在不断的成熟，对于指数化投资和量化投资的理念也开始容易理解并愿意接纳。</strong></p>
+</blockquote>
+<h2 id="smart-beta长期来看有望战胜指数"><a class="header" href="#smart-beta长期来看有望战胜指数">Smart Beta长期来看有望战胜指数</a></h2>
+<p>还是用刚才提到的创成长指数来举例，<code>创成长指数</code>基日为2012年12月31日，<strong>截止2021年8月27日，基日以来，创成长指数累计收益率高达<code>710%</code>，年化收益率达<code>28%</code>；而创业板指同期累计收益率为<code>226%</code>，年化收益率为<code>11%</code></strong>。由此可见，创成长指数利用Smart Beta策略从长期维度战胜了创业板指，实现了明显的超额收益。从历史数据来看，创成长往往在市场上涨环境下的超额收益更高，<em><strong>不仅适合长期持有，也适合在牛市反弹中博取短线收益。</strong></em></p>
+<p>总结来看，自<code>创成长指数</code>基日以来与创业板指相比，超额收益明显，利用<code>Smart Beta策略</code>从长期角度战胜了创业板指。从年度收益率情况来看，在2013年创业板股票基本面出现真正增长、2017年创业板股票增长出现分化拐点，2021年创业板领涨A股时仍然有显著超额收益。</p>
+<blockquote>
+<p><img src="../images/%E5%88%9B%E6%88%90%E9%95%BFvs%E5%88%9B%E4%B8%9A%E6%9D%BF%E6%8C%87%E6%94%B6%E7%9B%8A%E7%8E%87.jpg" alt="创成长vs创业板指收益率" /></p>
+<table><thead><tr><th></th><th><strong>创成长指数<br/>收益率</strong></th><th><strong>创业板指数<br/>收益率</strong></th><th><strong>超额<br/>收益率</strong></th></tr></thead><tbody>
+<tr><td>2013年</td><td>105%</td><td>83%</td><td>22%</td></tr>
+<tr><td>2014年</td><td>5%</td><td>13%</td><td>-8%</td></tr>
+<tr><td>2015年</td><td>78%</td><td>84%</td><td>-6%</td></tr>
+<tr><td>2016年</td><td>-21%</td><td>-28%</td><td>7%</td></tr>
+<tr><td>2017年</td><td>6%</td><td>-11%</td><td>17%</td></tr>
+<tr><td>2018年</td><td>-29%</td><td>-29%</td><td>0%</td></tr>
+<tr><td>2019年</td><td>49%</td><td>44%</td><td>5%</td></tr>
+<tr><td>2020年</td><td>97%</td><td>65%</td><td>32%</td></tr>
+<tr><td>2021年以来</td><td>23%</td><td>15%</td><td>8%</td></tr>
+<tr><td>2012-12-31至今<br/>年化收益率</td><td>29%</td><td>21%</td><td>8%</td></tr>
+</tbody></table>
+<p><em>数据来源：Wind，统计区间2012-12-31至2021-6-28，指数历史表现不代表基金产品表现。</em></p>
+</blockquote>
+<p>在中国市场，大多数<code>Smart Beta策略</code>相对基准依然有明显的超额收益。下图显示，基于单因子的<code>Smart Beta策略</code>长期都跑赢了基准<code>沪深300指数</code>。</p>
+<p><img src="../images/2010-2018%E5%B9%B4%E5%90%84%E5%9B%A0%E5%AD%90%E5%9C%A8A%E6%9C%8D%E5%B8%82%E5%9C%BA%E7%9A%84%E8%A1%A8%E7%8E%B0.jpg" alt="2010-2018年各因子在A服市场的表现" title="2010-2018年各因子在A服市场的表现" /></p>
+<p><code>Smart Beta</code>往往是众所周知的策略形式，溢价现象长期存在且容量大。主要对应于<code>风险补偿</code>、<code>结构限制</code>以及行为金融所引起的固定的定价误差，溢价并不会因为更多投资者的参与而衰减和消失。</p>
+<p>从海外市场的经验来看，<code>Smart Beta产品</code>是一种非常好的长期配置工具，大部分<code>SmartBeta策略</code>长期来看都可以战胜对应的指数，时间越长，其超额收益的表现会越突出，这正是此类产品的价值所在。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../fund/etf_how_configure.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../fund/etf_how_configure.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

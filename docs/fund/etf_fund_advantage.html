@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ETF基金优势 - 与资本,基本,股票,商业有关的知识汇总</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../tutorial.html">简介</a></li><li class="spacer"></li><li class="chapter-item expanded "><div>认识商业</div></li><li class="chapter-item expanded "><a href="../stock/index.html">股票</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/dividend.html">股票分红</a></li></ol></li><li class="chapter-item expanded "><a href="../fund/index.html">基金</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/finance_management01.html">基金入门</a></li><li class="chapter-item "><a href="../fund/finance_management02.html">基金常识</a></li><li class="chapter-item "><a href="../fund/finance_management03.html">常用术语</a></li><li class="chapter-item "><a href="../fund/finance_management04.html">指数基金</a></li><li class="chapter-item "><a href="../fund/finance_management05.html">债券基金</a></li><li class="chapter-item "><a href="../fund/finance_20_question.html">基金理财二十问</a></li></ol></li><li class="chapter-item expanded "><a href="../fund/finance_etf.html">EFT基金精要</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/index_fund.html">指数基金家族</a></li><li class="chapter-item "><a href="../fund/etf_fund_guide.html">ETF基金简介</a></li><li class="chapter-item expanded "><a href="../fund/etf_fund_advantage.html" class="active">ETF基金优势</a></li><li class="chapter-item "><a href="../fund/etf_vs_stock.html">ETF VS 股票</a></li><li class="chapter-item "><a href="../fund/etf_how_buy.html">ETF基金怎么买</a></li><li class="chapter-item "><a href="../fund/etf_how_choice.html">ETF基金怎么选</a></li><li class="chapter-item "><a href="../fund/etf_investment_strategy.html">ETF基金投资策略</a></li><li class="chapter-item "><a href="../fund/etf_how_configure.html">ETF基金配置策略</a></li><li class="chapter-item "><a href="../fund/smart_beta_guide.html">Smart Beta基金简介</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">与资本,基本,股票,商业有关的知识汇总</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li>
+<p><a href="#etf%E5%9F%BA%E9%87%91%E4%BC%98%E5%8A%BF">ETF基金优势</a></p>
+<ul>
+<li><a href="#%E7%9C%81%E9%92%B1%E8%B4%B9%E7%94%A8%E7%9B%B8%E5%AF%B9%E8%BE%83%E4%BD%8E">省钱：费用相对较低</a></li>
+<li><a href="#%E7%9C%81%E5%BF%83%E9%A3%8E%E9%99%A9%E5%88%86%E6%95%A3%E6%93%8D%E4%BD%9C%E9%80%8F%E6%98%8E">省心：风险分散、操作透明</a></li>
+<li><a href="#%E7%9C%81%E6%97%B6%E4%BA%A4%E6%98%93%E8%BF%85%E9%80%9F">省时：交易迅速</a></li>
+<li><a href="#%E7%9C%81%E5%8A%9B%E5%AE%9E%E7%89%A9%E7%94%B3%E8%B5%8E%E5%A5%BD%E5%A4%84%E5%A4%9A">省力：实物申赎好处多</a></li>
+</ul>
+</li>
+<li>
+<p>视频: <a href="https://caifuhao.eastmoney.com/news/20211210154911015624390">https://caifuhao.eastmoney.com/news/20211210154911015624390</a></p>
+</li>
+</ul>
+<h1 id="etf基金优势"><a class="header" href="#etf基金优势">ETF基金优势</a></h1>
+<blockquote>
+<p>作为最常见的指数基金，<code>ETF</code>可谓是基金市场的“当红炸子鸡”。<code>2018</code>年市场跌到几乎无人问津的底部区域之后，<code>ETF</code>就循序渐进地火了，越来越多的<code>ETF</code>产品开始进入了投资人的视野。以最受投资者关注的<code>股票ETF</code>为例，<code>2018</code>年初，全市场一共只有<code>112</code>只<code>股票ETF</code>产品，合计规模不过<code>2000＋亿元</code>；仅仅<code>2</code>年后，到<code>2020</code>年底，全市场<code>股票ETF</code>产品共<code>315</code>只，合计规模突破了<code>7800</code>亿元，产品数量增加了<code>1.8</code>倍，规模增加了<code>2.8</code>倍。进入<code>2021</code>年，即便是市场震荡的一季度，全市场<code>股票ETF</code>规模也逆势激增了<code>254</code>亿元。</p>
+<p>（数据来源：Wind，截止2021—3—31）</p>
+</blockquote>
+<blockquote>
+<p><strong>华夏基金</strong></p>
+<p><code>ETF</code>基金为什么如此受到投资者的关注和青睐，这和它自身的优势密不可分。<code>ETF</code>具备指数化投资的所有优势并且优于普通的指数基金，比如<code>分散投资</code>、<code>透明度良好</code>、<code>操作简单</code>等，被人们称为<strong>四省基金</strong>！</p>
+<p><img src="../images/ETF01.png" alt="ETF四省优势" title="ETF四省优势" /></p>
+</blockquote>
+<h2 id="省钱费用相对较低"><a class="header" href="#省钱费用相对较低">省钱：费用相对较低</a></h2>
+<p>对于 <strong>基金管理人</strong> 而言，由于<code>ETF基金</code>一般采取的是<em>跟踪指数的投资策略</em>，<em><strong>基金管理人</strong> 不需要花大量的时间和精力来选择投资工具的种类、判断买入与卖出的时机，这样就在一定程度上减少了基金的主动管理费用，因此管理费用相对较低廉，通常为普通开放式基金的 <strong>三分之一</strong>。</em></p>
+<p>对于 <strong>普通投资者</strong> 而言，<code>ETF</code>的交易成本相对于普通指数型基金也更低。在二级市场交易时，<code>ETF</code>不涉及<code>申购费</code>和<code>赎回费</code>，交易费用只按照证券公司的交易佣金来收取（最高为成交金额的0.3％）。<em>并且既<code>不需要缴纳印花税</code></em>（目前股票印花税为0.1％），<em>所获得的基金分红和差价收入也<code>免缴分红所得税</code>。</em></p>
+<h2 id="省心风险分散操作透明"><a class="header" href="#省心风险分散操作透明">省心：风险分散、操作透明</a></h2>
+<p><code>ETF</code>为投资者提供<em>多样化的投资组合</em>，比如：<code>上证50ETF</code>跟踪<code>上证50指数</code>，其投资组合由沪市规模大、流动性好的最具代表性的50只股票组成，主要定位于投资大盘蓝筹股票；而跟踪<code>科创50指数</code>的<code>科创50ETF</code>，标的指数作为科创板的代表性指数，其投资组合的成分股主要分布在<code>新一代信息技术</code>、<code>生物</code>、<code>高端装备制造</code>以及新材料等新兴产业，具备很高的科技含量。投资<code>ETF基金</code>一方面免去了投资者选股的烦恼，另外一方面，产品的原理是通过专业编制，筛选具有代表性的各领域龙头企业构成一个股票组合，避免 <strong>“把鸡蛋放在一个篮子里”</strong>，对风险进行了再分散，受 <strong>“黑天鹅”</strong> 事件影响极低。</p>
+<p><code>ETF基金</code>的收益率透明度较高，对个人投资者而言，可以从行情软件中查到<code>ETF基金</code>在二级市场的实时成交价格，也可以通过券商交易软件随时看到持仓的浮盈／浮亏情况。此外，<code>ETF</code>还每日公布申购赎回清单（投资组合），<em>具有公开透明的优点，减少了基金管理人潜在的道德风险。</em></p>
+<h2 id="省时交易迅速"><a class="header" href="#省时交易迅速">省时：交易迅速</a></h2>
+<p><code>ETF</code>的交易结合了股票交易的特性，<em>卖出ETF的资金当日可用</em>，<em>第二日可取</em>。<em>与一般的开放式指数基金相比，借助ETF进行指数化投资可实时交易，随时把握价格，灵活度更高</em>。此外，<code>跨境</code>、<code>商品</code>、<code>货币</code>和<code>债券</code>四类<code>ETF</code>还可实现<code>T＋0</code>交易，有效提升资金使用的效率。</p>
+<h2 id="省力实物申赎好处多"><a class="header" href="#省力实物申赎好处多">省力：实物申赎好处多</a></h2>
+<p><code>ETF</code>采用实物进行申购赎回，比普通指数基金能更紧密的跟踪指数。<code>ETF</code>给付的是按目标指数构成的一篮子股票，<em>避免了普通开放式基金现金申购后的建仓成本和赎回时基金资产变现成本</em>，<em>也不存在巨额赎回压力，基金资产预留现金头寸比例小，资产组合结构稳定，买卖活动少，管理成本低，有利于保障<code>ETF基金份额净值</code>有效跟踪目标指数。</em></p>
+<p>此外，<code>实物申赎</code>还提供了在基础股票市场与<code>ETF二级市场</code>之间的套利机制。<code>ETF</code>的<code>实物申购赎回</code>将一篮子股票的市场价格与<code>ETF的市场价格</code>关联起来，<em>当<code>ETF</code>的市场价格高于基金份额参考净值一定幅度，投资者可用相对较低的价格买入一篮子股票，然后申购<code>ETF份额</code>，再以较高的价格卖出<code>ETF份额</code>获得套利收益</em>（简称 <strong>溢价套利</strong>）。当ETF的市场价格低于基金份额参考净值一定幅度，投资者可进行反向操作，以较低的价格买入ETF份额，赎回获得一篮子股票然后卖出获得套利收益（简称 <strong>折价套利</strong>）。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../fund/etf_fund_guide.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../fund/etf_vs_stock.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../fund/etf_fund_guide.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../fund/etf_vs_stock.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

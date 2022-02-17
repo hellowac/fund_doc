@@ -16,6 +16,8 @@
     - [交易费用](./stock/hongkong_trading_cost.md)
   - [其他]()
     - [股票分红](./stock/dividend.md)
+- [科创板](./st_board/index.md)
+  - [精要](./st_board/guide.md)
 - [市场版块](./market/index.md)
 - [基金](./fund/index.md)
   - [基金入门](./fund/finance_management01.md)

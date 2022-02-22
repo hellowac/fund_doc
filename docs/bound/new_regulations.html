@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>可转债发行新规 - 与资本,基本,股票,商业有关的知识汇总</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../tutorial.html">简介</a></li><li class="spacer"></li><li class="chapter-item "><div>认识商业</div></li><li class="chapter-item "><a href="../stock/index.html">股票</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/subscription.html">新股申购</a></li><li class="chapter-item "><a href="../stock/entrust.html">股票委托</a></li><li class="chapter-item "><a href="../stock/trading_rule.html">交易规则</a></li><li class="chapter-item "><a href="../stock/hongkong_stock.html">港股通</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/hongkong_open_account.html">开户条件</a></li><li class="chapter-item "><a href="../stock/hongkong_trading_rule.html">交易规则</a></li><li class="chapter-item "><a href="../stock/hongkong_trading_risk.html">交易风险</a></li><li class="chapter-item "><a href="../stock/hongkong_trading_cost.html">交易费用</a></li></ol></li><li class="chapter-item "><div>其他</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/dividend.html">股票分红</a></li></ol></li></ol></li><li class="chapter-item "><a href="../st_board/index.html">科创板</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../st_board/guide.html">精要</a></li></ol></li><li class="chapter-item "><a href="../market/index.html">市场版块</a></li><li class="chapter-item "><a href="../fund/index.html">基金</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/finance_management01.html">基金入门</a></li><li class="chapter-item "><a href="../fund/finance_management02.html">基金常识</a></li><li class="chapter-item "><a href="../fund/finance_management03.html">常用术语</a></li><li class="chapter-item "><a href="../fund/finance_management04.html">指数基金</a></li><li class="chapter-item "><a href="../fund/finance_management05.html">债券基金</a></li><li class="chapter-item "><a href="../fund/finance_20_question.html">基金理财二十问</a></li></ol></li><li class="chapter-item "><a href="../fund/finance_etf.html">EFT基金精要</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/index_fund.html">指数基金家族</a></li><li class="chapter-item "><a href="../fund/etf_fund_guide.html">ETF基金简介</a></li><li class="chapter-item "><a href="../fund/etf_fund_advantage.html">ETF基金优势</a></li><li class="chapter-item "><a href="../fund/etf_vs_stock.html">ETF VS 股票</a></li><li class="chapter-item "><a href="../fund/etf_how_buy.html">ETF基金怎么买</a></li><li class="chapter-item "><a href="../fund/etf_how_choice.html">ETF基金怎么选</a></li><li class="chapter-item "><a href="../fund/etf_investment_strategy.html">ETF基金投资策略</a></li><li class="chapter-item "><a href="../fund/etf_how_configure.html">ETF基金配置策略</a></li><li class="chapter-item "><a href="../fund/smart_beta_guide.html">Smart Beta基金简介</a></li></ol></li><li class="chapter-item expanded "><a href="../bound/index.html">债券</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../bound/base.html">债券的基本要素</a></li><li class="chapter-item "><a href="../bound/feature.html">债券的特性</a></li><li class="chapter-item "><a href="../bound/price.html">债券的价格</a></li><li class="chapter-item "><a href="../bound/category.html">债券分类</a></li><li class="chapter-item "><a href="../bound/account.html">债券使用的账号和交收规则</a></li><li class="chapter-item "><a href="../bound/buy_price.html">债券买卖费用</a></li><li class="chapter-item "><a href="../bound/appropriateness.html">债券适当性</a></li><li class="chapter-item "><a href="../bound/issued.html">债券的发行</a></li><li class="chapter-item "><a href="../bound/rating.html">债券评级</a></li><li class="chapter-item "><a href="../bound/trading_rules.html">债券交易规则</a></li><li class="chapter-item "><a href="../bound/definitiond.html">可交换债券定义</a></li><li class="chapter-item "><a href="../bound/convertible_bond_definition.html">可转债券定义</a></li><li class="chapter-item "><a href="../bound/bond_pledged_repurchase.html">债券质押式回购</a></li><li class="chapter-item "><a href="../bound/repurchase.html">债券回售</a></li><li class="chapter-item "><a href="../bound/relationship.html">市场利率和债券价格关系</a></li><li class="chapter-item "><a href="../bound/duration.html">什么是债券久期</a></li><li class="chapter-item "><a href="../bound/bond_duration_rules.html">债券久期规则</a></li><li class="chapter-item "><a href="../bound/the_role_of_bond_duration.html">债券久期的作用</a></li><li class="chapter-item expanded "><a href="../bound/new_regulations.html" class="active">可转债发行新规</a></li><li class="chapter-item "><a href="../bound/risk.html">债券融资产品风险介绍</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">与资本,基本,股票,商业有关的知识汇总</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="可转债发行新规"><a class="header" href="#可转债发行新规">可转债发行新规</a></h1>
+<p>2017年9月8日开始实施可转债发行的新规后，投资者可以体验到0成本，无条件的顶格申购。这样的条件几乎是人人都可以参与，广大的散户投资者成为最直接的受益对象。</p>
+<p>首先了解一下什么是可转债：</p>
+<p>“可转换公司债券”简称可转债，是上市公司发行的一种特殊债券，该债券可以根据合同条款，转换成该上市公司对应数量的股份。通常可转债的票面利率较低。可转债既有债券的性质，又有股票的性质。它可以像普通债券一样上市交易，持有到期收取固定利息，这样可以取得稳定收益。一旦投资者把债券转换成股票，即意味着投资者持有的债权变成股权，获得参与股票分红，参与公司决策等权利。</p>
+<p>新规发布以来，已经有两支采用信用申购的可转债发行，分别是雨虹转债和林洋转债。并且即将迎来第三支可转债的发行（金禾转债）。在新规下，投资者无需持有股票，也无需持有资金，照样可以顶格申购。</p>
+<p>新规下发行的第一支可转债是由北京东方雨虹防水技术股份有限公司（股票代码：002271）发行的雨虹转债（债券代码：128016），发行的总量是18.40 亿元（共计 18,400,000 张），发行日期为 2017 年 9 月 25 日。</p>
+<p>其发行结果如下：</p>
+<p>1、向原 A 股股东优先配售结果</p>
+<p>原股东共优先配售雨虹转债 15,731,339 张，共计 1,573,133,900 元，占本次发行总量的 85.50%。</p>
+<p>2、网上向一般社会公众投资者发售结果</p>
+<p>本次发行最终确定的网上向社会公众投资者发行的雨虹转债为 266,866,000 元（2,668,660 张），占本次发行总量的 14.50%，网上中签率为<code>0.0013187948%</code>。</p>
+<p><img src="../images/bound14.png" alt="发售结果" /></p>
+<p>雨虹转债上市日期是2017年10月20日，上市首日最高价格到达124.1元，也就是说如果投资者中签后在上市首日卖出就可以获得最高24%的收益水平。</p>
+<p>发行可转债的对象可以分为原股东配债，和向社会公众发债两种模式，向原股东配债的，拥有优先认购权利。从结果可以看到，雨虹转债原股东配债占总发行量的85.5%。（第二支可转债林洋转债的原股东配债占比也要达到78.47%），也就是说，发行的总额度大部分由股东配售申购，分给普通投资者的比例只有在20%左右，如果想要申购债券的，可以购买该上市公司A股股票，通过配售的方式来购买债券更加有利。</p>
+<p>具体申购规则：</p>
+<ol>
+<li>
+<p>向原股东配售</p>
+<p>（1）适用对象：原股东（即在股权登记日日终持有该股票的客户）</p>
+<p>（2）发行日前一日晚，配售权利将会转入客户账户内。客户也可放弃配债的操作权利。</p>
+<p>（3）配售权利的数量，是以客户持有该上市公司的股票数量，按一定的配售比例进行核定的。沪市为10张的整数倍；深市为1张的整数倍。</p>
+<p>（4）股东参与配债申购，一定可以获得对应数量的债券，同时仍可继续参与该债券对社会公众发行部分的申购。</p>
+<p>（5）原股东参与配售时需在其优配额度之内根据优先配售的可转债数量足额缴付资金。</p>
+</li>
+<li>
+<p>向社会公众发售</p>
+<p>（1）适用对象：任意投资者（含配债的老股东）</p>
+<p>（2）发行日当天通过发债代码申购该债券，中签方式类似新股申购。</p>
+<p>（3）参与发债时，无需缴付申购资金；中签的客户需在T+2日（T日为申购日）日终保证账户有足额的认购资金。</p>
+<p>（4）参与发债时，委托数量需为10张整数倍（可以顶格申购）。</p>
+</li>
+</ol>
+<p>向原股东配售和向社会公众发售在操作的时候分别有自己的申购代码，投资者按照自己参与的方式，通过股票买入菜单输入对应的代码就可以申购可转债。</p>
+<p>注意事项：</p>
+<ol>
+<li>
+<p>如果是社会公众发债的方式参与的，投资者可以顶格申购，也就是按照申购上限数量申报，不用担心要缴款几百万，通常一个账户只会中一个号，且在中签后缴款，中一个号只要1000元。</p>
+</li>
+<li>
+<p>对于参与配售的客户，在配售当日需要留足配售额度内的缴款资金；对于参与社会公众发债的客户，申购日可以无资金要求，如果确认自己中签，需在T+2日（T日为申购日）日终保证账户有足额的认购资金。</p>
+</li>
+<li>
+<p>投资者连续 12 个月内累计出现 3 次中签但未足额缴款的情形时，自结算参与人最近一次申报其放弃认购的次日起 6 个月（按 180 个自然日计算，含次日）内不得参与网上新股、可转债及可交换债申购。放弃认购的次数按照投资者实际放弃认购的新股、可转债、可交换债的只数合并计算。 投资者一定要关心缴款时间。</p>
+</li>
+<li>
+<p>每个证券账户只能申购一次，多次申购的，以第一笔为有效，其他都视为无效。</p>
+</li>
+<li>
+<p>投资者需要注意理性投资，切勿盲目申购，为了获得原股东有限配售权，盲目买入上市公司的股票，导致股票套路就得不偿失了。</p>
+</li>
+<li>
+<p>注意投资流动性风险，申购到债券以后，还需要等待上市公司公告该债券的上市日期。雨虹转债的上市日期和发行日期中间相隔近一个月时间。</p>
+</li>
+<li>
+<p>可转债通常本身利率较低，投资者也要及时了解，债券投资风险，以及相应的转换条款、债券回售条款、提前赎回条款和利率对付条款等。</p>
+</li>
+</ol>
+<p>后续的可转债概念股票：</p>
+<p><img src="../images/bound15.png" alt="发售结果" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../bound/the_role_of_bond_duration.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../bound/risk.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../bound/the_role_of_bond_duration.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../bound/risk.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

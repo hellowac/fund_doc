@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>期货分析技术 - 与资本,基本,股票,商业有关的知识汇总</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../tutorial.html">简介</a></li><li class="spacer"></li><li class="chapter-item "><div>认识商业</div></li><li class="chapter-item "><a href="../stock/index.html">股票</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/subscription.html">新股申购</a></li><li class="chapter-item "><a href="../stock/entrust.html">股票委托</a></li><li class="chapter-item "><a href="../stock/trading_rule.html">交易规则</a></li><li class="chapter-item "><a href="../stock/hongkong_stock.html">港股通</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/hongkong_open_account.html">开户条件</a></li><li class="chapter-item "><a href="../stock/hongkong_trading_rule.html">交易规则</a></li><li class="chapter-item "><a href="../stock/hongkong_trading_risk.html">交易风险</a></li><li class="chapter-item "><a href="../stock/hongkong_trading_cost.html">交易费用</a></li></ol></li><li class="chapter-item "><div>其他</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/dividend.html">股票分红</a></li><li class="chapter-item "><a href="../stock/call_auction.html">什么是集合竞价</a></li></ol></li></ol></li><li class="chapter-item "><a href="../st_board/index.html">科创板</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../st_board/guide.html">精要</a></li></ol></li><li class="chapter-item "><a href="../market/index.html">市场版块</a></li><li class="chapter-item "><a href="../fund/index.html">基金</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/finance_management01.html">基金入门</a></li><li class="chapter-item "><a href="../fund/finance_management02.html">基金常识</a></li><li class="chapter-item "><a href="../fund/finance_management03.html">常用术语</a></li><li class="chapter-item "><a href="../fund/finance_management04.html">指数基金</a></li><li class="chapter-item "><a href="../fund/finance_management05.html">债券基金</a></li><li class="chapter-item "><a href="../fund/finance_20_question.html">基金理财二十问</a></li></ol></li><li class="chapter-item "><a href="../fund/finance_etf.html">EFT基金精要</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/index_fund.html">指数基金家族</a></li><li class="chapter-item "><a href="../fund/etf_fund_guide.html">ETF基金简介</a></li><li class="chapter-item "><a href="../fund/etf_fund_advantage.html">ETF基金优势</a></li><li class="chapter-item "><a href="../fund/etf_vs_stock.html">ETF VS 股票</a></li><li class="chapter-item "><a href="../fund/etf_how_buy.html">ETF基金怎么买</a></li><li class="chapter-item "><a href="../fund/etf_how_choice.html">ETF基金怎么选</a></li><li class="chapter-item "><a href="../fund/etf_investment_strategy.html">ETF基金投资策略</a></li><li class="chapter-item "><a href="../fund/etf_how_configure.html">ETF基金配置策略</a></li><li class="chapter-item "><a href="../fund/smart_beta_guide.html">Smart Beta基金简介</a></li></ol></li><li class="chapter-item "><a href="../bound/index.html">债券</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../bound/base.html">债券的基本要素</a></li><li class="chapter-item "><a href="../bound/feature.html">债券的特性</a></li><li class="chapter-item "><a href="../bound/price.html">债券的价格</a></li><li class="chapter-item "><a href="../bound/category.html">债券分类</a></li><li class="chapter-item "><a href="../bound/account.html">债券使用的账号和交收规则</a></li><li class="chapter-item "><a href="../bound/buy_price.html">债券买卖费用</a></li><li class="chapter-item "><a href="../bound/appropriateness.html">债券适当性</a></li><li class="chapter-item "><a href="../bound/issued.html">债券的发行</a></li><li class="chapter-item "><a href="../bound/rating.html">债券评级</a></li><li class="chapter-item "><a href="../bound/trading_rules.html">债券交易规则</a></li><li class="chapter-item "><a href="../bound/definitiond.html">可交换债券定义</a></li><li class="chapter-item "><a href="../bound/convertible_bond_definition.html">可转债券定义</a></li><li class="chapter-item "><a href="../bound/bond_pledged_repurchase.html">债券质押式回购</a></li><li class="chapter-item "><a href="../bound/repurchase.html">债券回售</a></li><li class="chapter-item "><a href="../bound/relationship.html">市场利率和债券价格关系</a></li><li class="chapter-item "><a href="../bound/duration.html">什么是债券久期</a></li><li class="chapter-item "><a href="../bound/bond_duration_rules.html">债券久期规则</a></li><li class="chapter-item "><a href="../bound/the_role_of_bond_duration.html">债券久期的作用</a></li><li class="chapter-item "><a href="../bound/new_regulations.html">可转债发行新规</a></li><li class="chapter-item "><a href="../bound/risk.html">债券融资产品风险介绍</a></li></ol></li><li class="chapter-item expanded "><a href="../tools/index.html">金融衍生工具</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../tools/characteristics.html">金融衍生工具的特征</a></li><li class="chapter-item "><a href="../tools/functions.html">金融衍生工具的功能</a></li><li class="chapter-item "><a href="../tools/options_definition.html">期权的定义</a></li><li class="chapter-item "><a href="../tools/definition_of_futures.html">期货的定义</a></li><li class="chapter-item "><a href="../tools/diff_between_options_and_futures.html">期权和期货的不同点</a></li><li class="chapter-item "><a href="../tools/stock_options.html">股票期权</a></li><li class="chapter-item "><a href="../tools/commodity_options.html">我国的商品期权</a></li><li class="chapter-item "><a href="../tools/financial_futures.html">我国的金融期货</a></li><li class="chapter-item "><a href="../tools/account_open_condition.html">个股期权开户条件</a></li><li class="chapter-item "><a href="../tools/account_open_condition2.html">股指期货开户条件</a></li><li class="chapter-item "><a href="../tools/account_open_condition3.html">开通商品期货期权的条件</a></li><li class="chapter-item "><a href="../tools/introduction_of_domestic.html">国内期货交易所介绍</a></li><li class="chapter-item "><a href="../tools/options_rule.html">个股期权交易规则</a></li><li class="chapter-item "><a href="../tools/options_rule2.html">个股期权行权规则</a></li><li class="chapter-item "><a href="../tools/question_answers.html">备兑开仓和备兑平仓问答</a></li><li class="chapter-item "><a href="../tools/options_risk.html">个股期权风险</a></li><li class="chapter-item "><a href="../tools/stock_index_futures_contracts_and_rules.html">股指期货合约及规则</a></li><li class="chapter-item "><a href="../tools/commodity_futures_contract_content.html">商品期货合约内容</a></li><li class="chapter-item "><a href="../tools/dormant_futures_account.html">期货账户休眠</a></li><li class="chapter-item "><a href="../tools/forced_liquidation.html">强行平仓</a></li><li class="chapter-item "><a href="../tools/commodity_futures_options.html">商品期货期权-白糖</a></li><li class="chapter-item "><a href="../tools/commodity_futures_options2.html">商品期货期权-豆粕</a></li><li class="chapter-item "><a href="../tools/margin_trading_system.html">保证金交易制度</a></li><li class="chapter-item "><a href="../tools/derivatives_trading_hours.html">各个衍生工具交易时间</a></li><li class="chapter-item expanded "><a href="../tools/futures_analysis_technology.html" class="active">期货分析技术</a></li><li class="chapter-item "><a href="../tools/insurance_strategy01.html">期权策略篇之“保险策略（一）”</a></li><li class="chapter-item "><a href="../tools/insurance_strategy02.html">期权策略篇之“保险策略（二）”</a></li><li class="chapter-item "><a href="../tools/insurance_strategy03.html">期权策略篇之“保险策略（三）”</a></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">与资本,基本,股票,商业有关的知识汇总</h1>
+
+                    <div class="right-buttons">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="期货分析技术"><a class="header" href="#期货分析技术">期货分析技术</a></h1>
+<p>期货交易可以采用K线图、线形图、点数图和移动平均线法等技术因素分析法，具体分析如下：</p>
+<p>（1）利用技术分析抉择时机</p>
+<p>利用技术分析来选择交易机会其实并不新鲜，唯一的区别是，出、入市时机抉择问题是针对很短暂的时期而言的。这里所关心的时间范围，是以天、小时乃至分钟来计算的，这与逐周、逐月的筹划正好相对立。但是所采用的技术方法依然是一致的。</p>
+<p>（2）关于突破信 号的策略</p>
+<p>关于突破信 号，交易者永远都得面对一个左右为难的问题：究竟在突破发生之前预先入市呢？还是正当突破发生的时候当场入市呢？或是等突破发生后市场反扑或反弹时伺机入市呢？三种做法各有各的门道，而且也有综合采用三种方式的办法。如果交易者可以买卖数张合约，那么不妨每样各做一个单位。假定预期市场将发生向上突破，采取预先方式的好处就在于，如果突破果真如愿发生了，那么头寸就具备有利的价值。但是在另一方面，交易失败的风险也相应地较大。如果正当突破发生时才入市，则成功的把握较大，但是代价是，入市的价位也不利。如果等市场在突破后出现反扑时再伺机入市，那么只要果真能够发生反扑，这就不失为合理的折衷方案。可惜的是，许多势头凶猛的市场（通常也是最有利可图的）并不给那些耐心的交易商第二个机会。因此，采取伺机方式的风险小，但是错过重要的入市机会的可能性较大。</p>
+<p>这也是一个很好的例子，说明使用复合头寸的办法大大地化解了左右为难的程度。在突破前&quot;预先&quot;入市时，交易者不妨开立一点小头寸；然后，在突破时，再添一点头寸；最后，等突破后再追加一点头寸。但是，如果交易者只有一点小头寸，那么他将难于摆布。在很大程度上，他的决定取决于他愿意在这笔交易上冒多少风险，以及他愿意采取什么样交易风格。最保守的方式可能是在市场突破后出现反扑时伺机入市。碰上这种情况，完全要看交易者本人如何决策了。</p>
+<p>（3）趋势线的突破</p>
+<p>这是一种新头寸，或者正找机会平仓了结原有头寸的话，那么，紧凑趋势线的突破常常构成绝妙的下手信 号。当然，始终也必须考虑其他技术信 号。另外，在趋势线起支撑或阻挡作用的时候，也可以用作入市点。在主要的上升趋势线的上侧买入，或者在主要的下降趋势线的下侧卖出，均不失为有效的时机抉择的对策。</p>
+<p>（4）支撑和阻挡水平的利用</p>
+<p>在选择出、入市点方面，支撑和阻挡水平是行之有效的图表工具。当阻挡被击破时，可能构成开立新的多头的信 号。而这个新头寸的保护性止损指令就可以设置在最近的支撑点的下方，甚至还可以更接近地设置止损指令，把它安排在实际的突破点之下，因为这个水平现在应该起到支撑作用了。如果在下降趋势中市场上冲至阻挡水平，或者在上升趋势中价格下跌到支撑水平，那么，均可以据此开立新头寸，或者把已有帐面利润的原有头寸加以扩大。另外，在设置止损指令的时候，支撑和阻挡水平也是最有参考价值的。</p>
+<p>（5）百分比回撤的利用</p>
+<p>在上升趋势中，向下的调整常常回撤到前面的上涨进程的40%-60%的位置。可以利用这一点来开立新的多头头寸或扩大原有的多头头寸。因为现在主要是时机抉择问题，所以把百分比回撤也应用于非常短期的变化。比如说，在牛市突破之后的40%回撤，或许正是绝妙的买入点。而在下降趋势中，40%-60%的向上反弹通常提供了优越的抛空机会。同时，在日内价格图上，也可以应用百分比回撤的概念。</p>
+<p>（6）价格跳空的利用</p>
+<p>还可以利用技术图形上出现的价格跳空来有效地抉择买卖时机，例如，在上升运动之后，其下方的价格跳空通常起到支撑作用。当价格跌回价格跳空的上边缘、或者回到价格跳空之内的时候买入。然后，把止损指令放置在跳空之下。在下跌运作之后，当市场反弹到上面价格跳空的下边缘、或进入到跳空之内的时候卖出，然后，再把止损指令安排在跳空的上方。</p>
+<p>（7）综合各项技术概念</p>
+<p>利用各项技术概念的最有效的办法，是把它们综合起来。我们讨论的是时机抉择问题，关于买或者卖的基本决定早已经确定了。此处所做的一切，就是要对入市和出市点进行细致的调整。如果采纳了买入信 号，那么，就会力求以最低的价格入市。假定价格跌回了40%-60%的买进区域，此处又存在一个显著的支撑水平，或者一个潜在的支撑性价格跌空，那就妙不可言。如果附近就有一条重要的上升趋势线，那就更好。</p>
+<p>把所有这一切因素综合在一起，就能增加交易时机抉择的有效性。在上升趋势中，在支撑区附近买进，但是如果该支撑被击溃，就尽快平仓出市。而在下降趋势中，我们应尽可能在接近阻挡区之处卖出，但是如果该阻挡被冲破，也尽快平仓出市。在上升趋势的向下调整中，如果沿着调整阶段中的高点所连成的紧凑下降趋势线被向上突破了，也可用作买入信 号。而在下降趋势的向上调整中，如果调整阶段的紧凑趋势线被向下突破了，也可能是做空头的机会。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../tools/derivatives_trading_hours.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../tools/insurance_strategy01.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../tools/derivatives_trading_hours.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../tools/insurance_strategy01.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+                <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>

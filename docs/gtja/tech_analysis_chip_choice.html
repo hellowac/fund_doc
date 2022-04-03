@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>筹码精选 - 与资本,基本,股票,商业有关的知识汇总</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../tutorial.html">简介</a></li><li class="spacer"></li><li class="chapter-item "><div>认识商业</div></li><li class="chapter-item "><a href="../stock/index.html">股票</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/subscription.html">新股申购</a></li><li class="chapter-item "><a href="../stock/entrust.html">股票委托</a></li><li class="chapter-item "><a href="../stock/trading_rule.html">交易规则</a></li><li class="chapter-item "><a href="../stock/hongkong_stock.html">港股通</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/hongkong_open_account.html">开户条件</a></li><li class="chapter-item "><a href="../stock/hongkong_trading_rule.html">交易规则</a></li><li class="chapter-item "><a href="../stock/hongkong_trading_risk.html">交易风险</a></li><li class="chapter-item "><a href="../stock/hongkong_trading_cost.html">交易费用</a></li></ol></li><li class="chapter-item "><div>其他</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../stock/dividend.html">股票分红</a></li><li class="chapter-item "><a href="../stock/call_auction.html">什么是集合竞价</a></li></ol></li></ol></li><li class="chapter-item "><a href="../st_board/index.html">科创板</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../st_board/guide.html">精要</a></li></ol></li><li class="chapter-item "><a href="../market/index.html">市场版块</a></li><li class="chapter-item "><a href="../fund/index.html">基金</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/finance_management01.html">基金入门</a></li><li class="chapter-item "><a href="../fund/finance_management02.html">基金常识</a></li><li class="chapter-item "><a href="../fund/finance_management03.html">常用术语</a></li><li class="chapter-item "><a href="../fund/finance_management04.html">指数基金</a></li><li class="chapter-item "><a href="../fund/finance_management05.html">债券基金</a></li><li class="chapter-item "><a href="../fund/finance_20_question.html">基金理财二十问</a></li></ol></li><li class="chapter-item "><a href="../fund/finance_etf.html">EFT基金精要</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../fund/index_fund.html">指数基金家族</a></li><li class="chapter-item "><a href="../fund/etf_fund_guide.html">ETF基金简介</a></li><li class="chapter-item "><a href="../fund/etf_fund_advantage.html">ETF基金优势</a></li><li class="chapter-item "><a href="../fund/etf_vs_stock.html">ETF VS 股票</a></li><li class="chapter-item "><a href="../fund/etf_how_buy.html">ETF基金怎么买</a></li><li class="chapter-item "><a href="../fund/etf_how_choice.html">ETF基金怎么选</a></li><li class="chapter-item "><a href="../fund/etf_investment_strategy.html">ETF基金投资策略</a></li><li class="chapter-item "><a href="../fund/etf_how_configure.html">ETF基金配置策略</a></li><li class="chapter-item "><a href="../fund/smart_beta_guide.html">Smart Beta基金简介</a></li></ol></li><li class="chapter-item "><a href="../bound/index.html">债券</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../bound/base.html">债券的基本要素</a></li><li class="chapter-item "><a href="../bound/feature.html">债券的特性</a></li><li class="chapter-item "><a href="../bound/price.html">债券的价格</a></li><li class="chapter-item "><a href="../bound/category.html">债券分类</a></li><li class="chapter-item "><a href="../bound/account.html">债券使用的账号和交收规则</a></li><li class="chapter-item "><a href="../bound/buy_price.html">债券买卖费用</a></li><li class="chapter-item "><a href="../bound/appropriateness.html">债券适当性</a></li><li class="chapter-item "><a href="../bound/issued.html">债券的发行</a></li><li class="chapter-item "><a href="../bound/rating.html">债券评级</a></li><li class="chapter-item "><a href="../bound/trading_rules.html">债券交易规则</a></li><li class="chapter-item "><a href="../bound/definitiond.html">可交换债券定义</a></li><li class="chapter-item "><a href="../bound/convertible_bond_definition.html">可转债券定义</a></li><li class="chapter-item "><a href="../bound/bond_pledged_repurchase.html">债券质押式回购</a></li><li class="chapter-item "><a href="../bound/repurchase.html">债券回售</a></li><li class="chapter-item "><a href="../bound/relationship.html">市场利率和债券价格关系</a></li><li class="chapter-item "><a href="../bound/duration.html">什么是债券久期</a></li><li class="chapter-item "><a href="../bound/bond_duration_rules.html">债券久期规则</a></li><li class="chapter-item "><a href="../bound/the_role_of_bond_duration.html">债券久期的作用</a></li><li class="chapter-item "><a href="../bound/new_regulations.html">可转债发行新规</a></li><li class="chapter-item "><a href="../bound/risk.html">债券融资产品风险介绍</a></li></ol></li><li class="chapter-item "><a href="../tools/index.html">金融衍生工具</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../tools/characteristics.html">金融衍生工具的特征</a></li><li class="chapter-item "><a href="../tools/functions.html">金融衍生工具的功能</a></li><li class="chapter-item "><a href="../tools/options_definition.html">期权的定义</a></li><li class="chapter-item "><a href="../tools/definition_of_futures.html">期货的定义</a></li><li class="chapter-item "><a href="../tools/diff_between_options_and_futures.html">期权和期货的不同点</a></li><li class="chapter-item "><a href="../tools/stock_options.html">股票期权</a></li><li class="chapter-item "><a href="../tools/commodity_options.html">我国的商品期权</a></li><li class="chapter-item "><a href="../tools/financial_futures.html">我国的金融期货</a></li><li class="chapter-item "><a href="../tools/account_open_condition.html">个股期权开户条件</a></li><li class="chapter-item "><a href="../tools/account_open_condition2.html">股指期货开户条件</a></li><li class="chapter-item "><a href="../tools/account_open_condition3.html">开通商品期货期权的条件</a></li><li class="chapter-item "><a href="../tools/introduction_of_domestic.html">国内期货交易所介绍</a></li><li class="chapter-item "><a href="../tools/options_rule.html">个股期权交易规则</a></li><li class="chapter-item "><a href="../tools/options_rule2.html">个股期权行权规则</a></li><li class="chapter-item "><a href="../tools/question_answers.html">备兑开仓和备兑平仓问答</a></li><li class="chapter-item "><a href="../tools/options_risk.html">个股期权风险</a></li><li class="chapter-item "><a href="../tools/stock_index_futures_contracts_and_rules.html">股指期货合约及规则</a></li><li class="chapter-item "><a href="../tools/commodity_futures_contract_content.html">商品期货合约内容</a></li><li class="chapter-item "><a href="../tools/dormant_futures_account.html">期货账户休眠</a></li><li class="chapter-item "><a href="../tools/forced_liquidation.html">强行平仓</a></li><li class="chapter-item "><a href="../tools/commodity_futures_options.html">商品期货期权-白糖</a></li><li class="chapter-item "><a href="../tools/commodity_futures_options2.html">商品期货期权-豆粕</a></li><li class="chapter-item "><a href="../tools/margin_trading_system.html">保证金交易制度</a></li><li class="chapter-item "><a href="../tools/derivatives_trading_hours.html">各个衍生工具交易时间</a></li><li class="chapter-item "><a href="../tools/futures_analysis_technology.html">期货分析技术</a></li><li class="chapter-item "><a href="../tools/insurance_strategy01.html">期权策略篇之“保险策略（一）”</a></li><li class="chapter-item "><a href="../tools/insurance_strategy02.html">期权策略篇之“保险策略（二）”</a></li><li class="chapter-item "><a href="../tools/insurance_strategy03.html">期权策略篇之“保险策略（三）”</a></li></ol></li><li class="chapter-item expanded "><div>国泰君安</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../gtja/tech_analysis.html">技术分析</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../gtja/tech_analysis_chip_distibution.html">筹码分布</a></li><li class="chapter-item expanded "><a href="../gtja/tech_analysis_chip_choice.html" class="active">筹码精选</a></li></ol></li></ol></li><li class="chapter-item "><div>其他</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../other/stock_infomation.html">资讯网站</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">与资本,基本,股票,商业有关的知识汇总</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li><a href="#%E7%AD%B9%E7%A0%81%E7%B2%BE%E9%80%89">筹码精选</a>
+<ul>
+<li><a href="#%E6%92%91%E5%8E%8B%E4%BF%A1%E5%8F%B7---%E8%AF%86%E5%88%AB%E8%82%A1%E7%A5%A8%E6%92%91%E5%8E%8B%E4%BD%8D-%E8%BE%85%E5%8A%A9%E5%88%A4%E6%96%AD%E5%8F%8D%E5%BC%B9%E5%BC%BA%E5%BA%A6">撑压信号 - 识别股票撑压位 辅助判断反弹强度</a></li>
+<li><a href="#%E7%AD%B9%E7%A0%81%E7%B2%BE%E9%80%89---%E7%B2%BE%E9%80%89%E4%BD%8E%E4%BD%8D%E5%90%B8%E7%AD%B9%E8%82%A1%E7%A5%A8-%E9%80%8F%E8%A7%86%E4%B8%BB%E5%8A%9B%E8%B5%84%E9%87%91%E5%8A%A8%E5%90%91">筹码精选 - 精选低位吸筹股票 透视主力资金动向</a>
+<ul>
+<li><a href="#%E6%8A%95%E8%B5%84%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3">投资原理详解</a>
+<ul>
+<li><a href="#%E7%AD%B9%E7%A0%81%E5%BA%95%E9%83%A8%E7%B2%BE%E9%80%89">筹码底部精选</a></li>
+<li><a href="#%E5%BC%BA%E6%94%AF%E6%92%91%E4%BD%8D%E7%B2%BE%E9%80%89">强支撑位精选</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%9C%A8%E5%93%AA%E9%87%8C%E4%BD%BF%E7%94%A8-%E7%AD%B9%E7%A0%81%E7%B2%BE%E9%80%89%E6%92%91%E5%8E%8B%E4%BF%A1%E5%8F%B7">在哪里使用 筹码精选&amp;撑压信号</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="筹码精选"><a class="header" href="#筹码精选">筹码精选</a></h1>
+<p>原文: <a href="https://apicdn.app.gtja.com/web2/cdn_market_chip-select-readme/#/home?hasHead=0&amp;stateBgColor=194bbf&amp;titleLightColor=0">https://apicdn.app.gtja.com/web2/cdn_market_chip-select-readme/#/home?hasHead=0&amp;stateBgColor=194bbf&amp;titleLightColor=0</a></p>
+<h2 id="撑压信号---识别股票撑压位-辅助判断反弹强度"><a class="header" href="#撑压信号---识别股票撑压位-辅助判断反弹强度">撑压信号 - 识别股票撑压位 辅助判断反弹强度</a></h2>
+<p><strong>股价到达支撑位</strong>: 表示股价短期跌破该点位的可能性低，有望企稳反弹。</p>
+<p><strong>股价到达压力位</strong>: 表示股价短期突破该点位的阻力大，后续有反转下跌的可能。</p>
+<p><img src="../images/%E7%AD%B9%E7%A0%81%E7%B2%BE%E9%80%8900.png" alt="筹码精选00" /></p>
+<p><img src="../images/%E7%AD%B9%E7%A0%81%E7%B2%BE%E9%80%8901.png" alt="筹码精选" /></p>
+<ul>
+<li>
+<p><strong>撑压信号:</strong></p>
+<p>运用<a href="./tech_analysis_chip_distibution.html">筹码分布理论</a>，对近90日的个股逐笔成交数据，进行逐日加权分布统计，计算筹码换手密集的压力价位和支撑价位。通过撑压信号，可在个股k线上直观揭示压力位和支撑位，辅助用户投资决策。</p>
+</li>
+<li>
+<p><strong>压力价位:</strong></p>
+<p>指在股价上升时可能遇到压力，从而可能有反转下跌的价位。若多次在该位置附近未形成有效突破，则会形成较强的压力线。压力线每十日更新一次，若股价突破压力线，则当天会重新计算一次。</p>
+</li>
+<li>
+<p><strong>支撑价位：</strong></p>
+<p>指在股价下跌时可能遇到支撑，从而可能止跌回稳的价位。若多次在该位置下跌未果，则形成较强的支撑位。支撑线每十日更新一次，若股价跌破支撑线，则当天会重新计算一次。</p>
+</li>
+<li>
+<p><strong>强度评分：</strong></p>
+<p>指最近250个交易日中，该个股价格每次触及支撑位或压力位后价格走势反转的概率，80分即反转概率为80%。</p>
+</li>
+<li>
+<p><strong>触达次十日表现：</strong></p>
+<p>统计最近250个交易日中，个股价格每次触达支撑位或压力位后，次十日的上涨次数、下跌次数和平均涨跌幅。</p>
+</li>
+</ul>
+<h2 id="筹码精选---精选低位吸筹股票-透视主力资金动向"><a class="header" href="#筹码精选---精选低位吸筹股票-透视主力资金动向">筹码精选 - 精选低位吸筹股票 透视主力资金动向</a></h2>
+<p>每日更新股票池，底部筹码集中度越高，主力资金流入越多，未来上涨概率越大！帮助你捕捉上涨前的底部信号。</p>
+<table><thead><tr><th>股票名称</th><th>90交易日最大涨幅</th><th>底部30%集中度</th><th>主力资金流入(万元)</th></tr></thead><tbody>
+<tr><td>恒XXX</td><td>88.21%</td><td>82%</td><td>763</td></tr>
+<tr><td>金XXX</td><td>70.48%</td><td>77%</td><td>652</td></tr>
+<tr><td>蓝XXX</td><td>64.60%</td><td>79%</td><td>1652</td></tr>
+<tr><td>兴XXX</td><td>49.20%</td><td>83%</td><td>1762</td></tr>
+<tr><td>中XXX</td><td>43.34%</td><td>72%</td><td>2531</td></tr>
+</tbody></table>
+<p><img src="../images/%E7%AD%B9%E7%A0%81%E7%B2%BE%E9%80%8902.png" alt="筹码精选" /></p>
+<p>每日更新跌至强支撑位的股票池，股票支撑强度越高，主力资金流入越多，未来上涨概率越大！抓住底部反弹机会，轻松享受炒股乐趣。</p>
+<table><thead><tr><th>股票名称</th><th>10交易日最大涨幅</th><th>支撑强度</th><th>主力资金流入(万元)</th></tr></thead><tbody>
+<tr><td>博XXX</td><td>34.04%</td><td>78</td><td>891</td></tr>
+<tr><td>徐XXX</td><td>21.70%</td><td>77</td><td>3981</td></tr>
+<tr><td>新XXX</td><td>17.01%</td><td>81</td><td>782</td></tr>
+<tr><td>数XXX</td><td>16.59%</td><td>82</td><td>1631</td></tr>
+<tr><td>高XXX</td><td>15.36%</td><td>82</td><td>792</td></tr>
+</tbody></table>
+<p><img src="../images/%E7%AD%B9%E7%A0%81%E7%B2%BE%E9%80%8903.png" alt="筹码精选03" /></p>
+<h3 id="投资原理详解"><a class="header" href="#投资原理详解">投资原理详解</a></h3>
+<p><strong>筹码精选</strong>，是根据每天个股的筹码分布数据，从全市场A股中挑选筹码底部密集的股票和股价触达强支撑位的优质个股，供用户选股时参考。</p>
+<p><img src="../images/%E7%AD%B9%E7%A0%81%E7%B2%BE%E9%80%8904.png" alt="筹码精选04" /></p>
+<h4 id="筹码底部精选"><a class="header" href="#筹码底部精选">筹码底部精选</a></h4>
+<p>通过多个维度选取筹码底部密集的个股，挑选出底部30%区间，聚集70%以上的筹码的股票，同时主力资金流净流入，市盈率较低，基本面指标较优的股票。</p>
+<p><strong>底部20%区间集中度</strong>：筹码分布底部20%区间聚集筹码的百分比。聚集百分比越高，底部反转的可能性越大。</p>
+<p><strong>底部30%区间集中度</strong>：筹码分布底部30%区间聚集筹码的百分比。底部精选出来的股票都是聚集70%以上的股票。</p>
+<p><img src="../images/%E7%AD%B9%E7%A0%81%E7%B2%BE%E9%80%8905.png" alt="筹码精选05" /></p>
+<p><strong>近30日主力资金流</strong>：近30个交易日该个股主力资金累计流入的数额。</p>
+<p><strong>30日资金流/成交额占比</strong>：近30个交易日该个股主力资金累计流入的数额与近30个交易日该个股成交额累计数的占比。占比越大越有利于个股触底反弹。</p>
+<p><strong>战法介绍</strong></p>
+<p>能够入选筹码底部精选的股票已经是筹码底部密集的股票。然而不是所有筹码底部密集的股票都是好股票，我们要结合行业板块，再筛选个股k线在底部横盘一个月以上时间，
+如 <strong>伴随双底</strong>，<strong>三底等箱体震荡形态</strong> 则最佳，另外再筛选近30日主力资金流大额流入，近30日资金流/成交额占比大于1%以上的个股，进行投资胜算则较大。</p>
+<h4 id="强支撑位精选"><a class="header" href="#强支撑位精选">强支撑位精选</a></h4>
+<p>精选全市场触及强支撑位的个股，支撑强度评分在80分以上的个股。支撑强度评分，它是指历史近一年该股每次触及支撑位的反弹概率，80分即80%的反弹概率。</p>
+<p><strong>战法介绍</strong></p>
+<p>选择支撑强度大的股票，并结合个股题材热点，选择近30日主力资金流大额流入，近30日资金流/成交额占比大于1%以上的个股，进行投资胜算则较大。</p>
+<h2 id="在哪里使用-筹码精选撑压信号"><a class="header" href="#在哪里使用-筹码精选撑压信号">在哪里使用 筹码精选&amp;撑压信号</a></h2>
+<p>在个股详情页下拉并释放，展开顶部的决策工具台，选择&quot;撑压信号&quot;按钮，即可在K线上标注出撑压信号。</p>
+<p><img src="../images/%E7%AD%B9%E7%A0%81%E7%B2%BE%E9%80%8906.gif" alt="筹码精选06" /></p>
+<p>点击右上角的横屏按钮，可以在页面右上角点击“筹码精选”，获取精准股票。</p>
+<p><img src="../images/%E7%AD%B9%E7%A0%81%E7%B2%BE%E9%80%8907.png" alt="筹码精选07.png" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../gtja/tech_analysis_chip_distibution.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../other/stock_infomation.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../gtja/tech_analysis_chip_distibution.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../other/stock_infomation.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

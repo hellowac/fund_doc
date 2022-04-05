@@ -88,6 +88,7 @@
   - [期权策略篇之“保险策略（二）”](./tools/insurance_strategy02.md)
   - [期权策略篇之“保险策略（三）”](./tools/insurance_strategy03.md)
 - [国泰君安]()
+  - [盘口指标](./gtja/handicap_indicator.md)
   - [技术分析](./gtja/tech_analysis.md)
     - [筹码分布](./gtja/tech_analysis_chip_distibution.md)
     - [筹码精选](./gtja/tech_analysis_chip_choice.md)
